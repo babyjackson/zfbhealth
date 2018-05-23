@@ -1,0 +1,283 @@
+page{
+    background: #efefef;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after{
+    clear: both;
+    height: 0;
+    display: block;
+    content: ".";
+    visibility:hidden;
+}
+.h-180{
+    height: 180rpx;
+}
+.h-30{
+    height: 30rpx;
+}
+.h-165{
+    height: 165rpx;
+}
+.tabw{
+    width: 750rpx;
+    background: #fff;
+}
+.tab{
+    width: 710rpx;
+    height: 95rpx;
+    margin:0 auto;
+    display: flex;
+}
+.tab .tab-item{
+    flex: 1;
+    line-height: 90rpx;
+    text-align: center;
+    position: relative;
+    border-bottom: 5rpx solid #fff;
+    font-size: 28rpx;
+    color: #5d5d5d;
+}
+.tab .tab-item text{
+    position: absolute;
+    top: 5rpx;
+    right: 15rpx;
+    display: block;
+    width: 30rpx;
+    height: 30rpx;
+    text-align: center;
+    line-height: 30rpx;
+    border-radius: 50%;
+    background: #46be05;
+    overflow: hidden;
+    font-size: 20rpx;
+    color: #fff;
+}
+.tab .tab-item.active{
+    border-bottom: 5rpx solid #46be05;
+    color: #46be05;
+}
+.con-itme{
+    display: none;
+}
+.con-itme.on{
+    display: block;
+}
+.con-itme{
+    padding: 0 0rpx;
+    overflow: hidden;
+}
+.con-itme .item{
+    width: 720rpx;
+    margin: 20rpx auto 0;
+    overflow: hidden;
+    background: #fff;
+}
+.con-itme .item .storetit{
+    height: 80rpx;
+    border-bottom: 2rpx solid #f2f2f2;
+    font-size: 28rpx;
+    color: #23242a;
+    line-height: 80rpx;
+    text-indent: 20rpx;
+    background: #f7f7f7;
+}
+.con-itme .item .igoods{
+    height: 205rpx;
+    overflow: hidden;
+} 
+.con-itme .item .igoods .figure{
+    width: 145rpx;
+    height: 145rpx;
+    display: block;
+    margin: 30rpx 20rpx;
+    border: 1rpx solid #eaeaea;
+}
+.con-itme .item .igoods .figure image{
+    display: block;
+    width: 145rpx;
+    height: 145rpx;
+}
+.con-itme .item .igoods .gtit{
+    width: 365rpx;
+    height: 95rpx;
+    font-size: 24rpx;
+    color: #2d2d2d;
+    line-height: 35rpx;
+    margin-top: 30rpx;
+    overflow: hidden;
+}
+.con-itme .item .igoods .dl{
+    margin-right: 15rpx;
+    margin-top: 30rpx;
+}
+.con-itme .item .igoods .dl .ypri{
+    font-size: 28rpx;
+    color: #848384;
+    text-decoration: line-through;
+    text-align: right;
+    line-height: 35rpx;
+}
+.con-itme .item .igoods .dl .xpri{
+    font-size: 28rpx;
+    color: #484a48;
+    text-align: right;
+    line-height: 35rpx;
+}
+.con-itme .item .igoods .dl .num{
+    font-size: 28rpx;
+    color: #8b898b;
+    line-height: 35rpx;
+}
+.con-itme .item .total{
+    font-size: 26rpx;
+    color: #101210;
+    text-align: right;
+    height: 70rpx;
+    line-height: 70rpx;
+    margin-right: 15rpx;
+    border-top: 2rpx solid #efefef;
+}
+.con-itme .item .total text{
+    color: #d60000;
+    line-height: 70rpx;
+}
+.con-itme .item .btn{
+    height: 90rpx;
+    border-top: 2rpx solid #efefef;
+}
+.con-itme .item .btn .btn1{
+    width: 195rpx;
+    height: 50rpx;
+    margin: 15rpx 20rpx 15rpx 0;
+    font-size: 23rpx;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50rpx;
+    background: #46be05;
+    border: 2rpx solid #46be05;
+    border-radius: 3rpx;
+    overflow: hidden;
+    padding: 0;
+}
+.con-itme .item .btn .btn2{
+    width: 195rpx;
+    height: 50rpx;
+    margin: 15rpx 20rpx 15rpx 0;
+    font-size: 23rpx;
+    color: #6b6b6b;
+    text-align: center;
+    line-height: 50rpx;
+    background: #fff;
+    border: 2rpx solid #a0a0a0;
+    border-radius: 3rpx;
+    overflow: hidden;
+    padding: 0;
+}
+
+/****没有订单***/
+.noorder{
+    width: 750rpx;
+    background: #fff;
+}
+.noorder .figure{
+    width: 410rpx;
+    height: 265rpx;
+    margin: 0 auto;
+}
+.noorder .figure image{
+    display: block;
+    width: 410rpx;
+    height: 265rpx;
+}
+.noorder .tips{
+    font-size: 28rpx;
+    color: #5e5e5e;
+    text-align: center;
+    line-height: 45rpx;
+}
+.noorder .text{
+    font-size: 23rpx;
+    color: #aeaeae;
+    text-align: center;
+    line-height: 30rpx;
+}
+/***猜你喜欢***/
+.recomW{
+    background: #efefef;
+}
+.recomW .bigtit{
+    width: 750rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    display: block;
+    background: #eeeeee;
+    font-size: 28rpx;
+    color: #212121;
+    text-align: center;
+}
+.recom{
+    width: 715rpx;
+    margin: 0rpx auto;
+    padding: 0rpx 0 0rpx 0;
+}
+.recom .item{
+    width: 350rpx;
+    height: 535rpx;
+    display: block;
+    border:2rpx solid #f1f1f1;
+    overflow: hidden;
+    background: #ffffff;
+}
+.recom .item:nth-of-type(odd){
+    float:left;
+}
+.recom .item:nth-of-type(even){
+    float:right;
+}
+.recom .item .figure{
+    width: 325rpx;
+    height: 340rpx;
+    margin: 0 auto;
+}
+.recom .item .figure image{
+    width: 325rpx;
+    height: 340rpx;
+    display: block;
+}
+.recom .item .tit{
+    height: 80rpx;
+    line-height: 40rpx;
+    width: 325rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 25rpx;
+    color: #212121;
+}
+.recom .item .pricew{
+    width: 325rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recom .item .pricew .pri{
+    font-size: 30rpx;
+    color: #46be05;
+    line-height: 55rpx;
+}
+.recom .item .pricew .scart{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #46be05;
+}
+.recom .item .pricew .scart image{
+    width: 55rpx;
+    height: 55rpx;
+    display: block;
+}

@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="wrap">
+    <view class="h55"></view>
+    <view class="success">
+      <icon type="success" size="40" color="#46be05" />
+    </view>
+    <view class="pri">订单金额¥15.00</view>
+    <view class="h50"></view>
+    <view class="btnw">
+      <navigator class="btn fl">继续购物</navigator>
+      <navigator class="btn fr" url="/pages/component/shopc/orderdetail/orderdetail">查看订单</navigator>
+    </view>
+    <view class="h25"></view>
+  </view>
+  <!--安全提示-->
+  <view class="safetytips">
+    <view class="tit">安全提示</view>
+    <view class="text">中国养生资讯均不会以订单问题、付款异常、系统升级等理由，通过QQ、短信发送信息给您退款链接。请提高警惕，谨防诈骗！</view>
+  </view>
+  <view class="h15"></view>  
+  <view class="orderdetail clearfix">
+    <view class="figure fl">
+      <image src="{{orderdetail.imgsrc}}"/>
+    </view>
+    <view class="dl fl">
+      <view class="tit">{{orderdetail.tit}}</view>
+      <view class="h15"></view>
+      <view class="price">¥{{orderdetail.price}}</view>
+    </view>
+    <view class="buyagain fr">再买一单</view>
+  </view>
+  <!--猜你喜欢-->
+  <view class="recomW">
+    <view class="bigtit">
+      猜你喜欢
+    </view>
+    <view class="recom clearfix">
+      <navigator class="item" a:for="{{recom}}">
+        <view class="h20"></view>
+        <view class="figure">
+          <image src="{{item.imgsrc}}"/>
+        </view>
+        <view class="h15"></view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="pricew clearfix">
+          <view class="pri fl">￥{{item.price}}</view>
+          <view class="scart fr"><image src="/images/scartico.png"/></view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

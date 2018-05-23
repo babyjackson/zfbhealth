@@ -1,0 +1,195 @@
+.h-50{
+    height: 50rpx;
+}
+.h-10{
+    height: 10rpx;
+}
+.h-20{
+    height: 20rpx;
+}
+.h-45{
+    height: 45rpx;
+}
+.h-15{
+    height: 15rpx;
+}
+.h-35{
+    height: 35rpx;
+}
+.xian3{
+    height: 3rpx;
+    background: #e8e8e8;
+}
+page{
+    background: #efefef;
+}
+.ragoods{
+    width: 750rpx;
+    background: #fff;
+}
+.ragoods .figure{
+    width: 110rpx;
+    height: 110rpx;
+    border:3rpx solid #e3e3e3;
+    overflow: hidden;
+    margin: 25rpx 25rpx 25rpx 30rpx;
+}
+.ragoods .figure image{
+    display: block;
+    width: 110rpx;
+    height: 110rpx;
+}
+.ragoods .tit{
+    width: 300rpx;
+    max-height: 95rpx;
+    line-height: 35rpx;
+    font-size: 24rpx;
+    color: #2d2d2d;
+    overflow: hidden;
+    margin: 25rpx 0;
+}
+.ragoods .dl{
+    text-align: right;
+    margin: 25rpx 35rpx 25rpx 0;
+}
+.ragoods .dl .price{
+    font-size: 28rpx;
+    color: #000000;
+}
+.ragoods .dl .num{
+    font-size: 28rpx;
+    color: #838183;
+}
+/**星星***/
+.section{
+    height: 40rpx;
+}
+.section .lab{
+    width: 165rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    text-align: center;
+}
+.starw{
+    position: relative;
+    height: 40rpx;
+}
+.starw .star{
+    width:40rpx;
+    height: 40rpx; 
+    margin-right: 15rpx;
+}
+.starw .star image{
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+}
+.starw .ystar{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.con{
+    background: #fff;
+    width: 750rpx;
+}
+.texta{
+    padding: 30rpx 35rpx;
+}
+.texta textarea{
+    width: 680rpx;
+    height: 140rpx;
+    display: block;
+    font-size: 28rpx;
+}
+.chooseimg{
+    padding: 30rpx;
+}
+.chooseimg .cimg{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 5rpx;
+    overflow: hidden;
+}
+.chooseimg .cimg image{
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+}
+.chooseimg .showimg{
+    width: 560rpx;
+    height: 120rpx;
+    overflow: hidden;
+}
+.chooseimg .showimg .simg{
+    width: 120rpx;
+    height: 120rpx;
+    margin-left: 20rpx;
+}
+.chooseimg .showimg .simg image{
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+}
+.seller{
+    padding: 20rpx 30rpx;
+}
+.seller .figure{
+    width: 120rpx;
+    height: 120rpx;
+    border: 3rpx solid #e0dae0;
+}
+.seller .figure image{
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+}
+.seller .dl{
+    margin-left: 20rpx;
+}
+.seller .dl .tit{
+    font-size: 30rpx;
+    color: #000000;
+    line-height: 60rpx;
+}
+.seller .dl .name{
+    font-size: 24rpx;
+    color: #2e2f2e;
+    line-height: 30rpx;
+}
+.foot{
+    height: 100rpx;
+    background: #fff;
+    position: fixed;
+    width: 750rpx;
+    bottom: 0;
+}
+.foot .check{
+    width: 300rpx;
+    line-height: 100rpx;
+    position: relative;
+}
+.foot .check checkbox{
+    width: 40rpx;
+    height: 40rpx;
+    margin:20rpx 5rpx 0 30rpx;
+}
+.foot .check icon{
+    width: 40rpx;
+    height:40rpx;
+    margin:20rpx 5rpx 0 30rpx;
+}
+.foot .check .circle{
+    width: 40rpx;
+    height: 40rpx;
+    margin:20rpx 5rpx 0 30rpx;
+}
+.issuebtn .btn{
+    width: 250rpx;
+    height: 100rpx;
+    border-radius: 0;
+    background: #46be05;
+    font-size: 30rpx;
+    color: #ffffff;
+    border: 0;
+}

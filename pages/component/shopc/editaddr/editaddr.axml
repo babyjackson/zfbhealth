@@ -1,0 +1,37 @@
+<view class="container">
+  <form onSubmit="formSubmit">
+    <view class="h20"></view>
+    <view class="section clearfix">
+      <view class="label fl">收货人：</view>
+      <view class="input fl">
+        <input maxlength="20" placeholder="请输入收货人姓名" name="consignee"/>
+      </view>
+    </view>
+    <view class="xian2"></view>
+    <view class="section clearfix">
+      <view class="label fl">手机号:</view>
+      <view class="input fl">
+        <input type="number" maxlength="11" placeholder="请输入收货人联系电话" name="phone"/>
+      </view>
+    </view>
+    <view class="h20"></view>
+    <view class="section clearfix">
+      <view class="label fl">所在城市：</view>
+      <view class="input fl" onTap="chooseCity">
+        <input placeholder="请选择" value="{{city}}" disabled="true" name="city"/>
+      </view>
+    </view>
+    <view class="xian2"></view>
+    <view class="section clearfix">
+      <view class="label fl">详细地址：</view>
+      <view class="input fl">
+        <input placeholder="请输入您的详细地址" name="fulladdr"/>
+      </view>
+    </view>
+    <view class="xian2"></view>
+    <view class="h135"></view>
+    <view class="submit">
+      <button formType="submit"> 保存 </button>
+    </view>
+  </form>
+</view>

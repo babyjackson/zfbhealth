@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="article">
+    <view class="arttit">中国养生资讯</view>
+    <view class="text">2004年，当两个年轻人为自己的一日三餐吃什么而愁时，创建了一个小小的个人网站。</view>
+    <view class="text">
+      没有想到，这粒微不足道的小种子，受到了无数人的喜爱与呵护，成长为备受用户喜爱的美食网络。
+    </view>
+  </view>
+  <!--联系方式-->
+  <view class="contactw">
+    <view class="tit">联系方式</view>
+    <view class="contact">
+      <view class="item clearfix" a:for="{{contact}}">
+        <view class="ico fl"><image src="{{item.ico}}"/></view>
+        <view class="lab fl">{{item.lab}}</view>
+        <view class="way fl">{{item.ways}}</view>
+      </view>
+    </view>
+  </view>
+</view>

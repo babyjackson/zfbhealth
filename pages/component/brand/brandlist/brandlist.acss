@@ -1,0 +1,93 @@
+@import '/pages/common/common.acss';
+page{
+    background: #ffffff;
+}
+.tabnav{
+    height: 90rpx;
+    width: 750rpx;
+    border-bottom: 2rpx solid #eeeeee;
+}
+.tabnav .dh{
+    height: 88rpx;
+    border-bottom: 4rpx solid rgba(0, 0, 0, 0);
+    line-height: 88rpx;
+    text-align: center;
+    font-size: 25rpx;
+    color: #474747;
+    float: left;
+    width: 120rpx;
+    margin: 0 65rpx;
+}
+.tabnav .dh.active{
+    color: #46be05;
+    border-bottom: 4rpx solid #46be05;
+}
+.conw .con-item{
+    display: none;
+}
+.conw .con-item.on{
+    display: block;
+}
+.recomW{
+    background: #ffffff;
+}
+.recom{
+    width: 715rpx;
+    margin: 0rpx auto;
+    padding: 20rpx 0;
+}
+.recom .item{
+    width: 350rpx;
+    height: 535rpx;
+    display: block;
+    border:2rpx solid #f1f1f1;
+    overflow: hidden;
+}
+.recom .item:nth-of-type(odd){
+    float:left;
+}
+.recom .item:nth-of-type(even){
+    float:right;
+}
+.recom .item .figure{
+    width: 325rpx;
+    height: 340rpx;
+    margin: 0 auto;
+}
+.recom .item .figure image{
+    width: 325rpx;
+    height: 340rpx;
+    display: block;
+}
+.recom .item .tit{
+    height: 80rpx;
+    line-height: 40rpx;
+    width: 325rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 25rpx;
+    color: #212121;
+}
+.recom .item .pricew{
+    width: 325rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recom .item .pricew .pri{
+    font-size: 30rpx;
+    color: #46be05;
+    line-height: 55rpx;
+}
+.recom .item .pricew .scart{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #46be05;
+}
+.recom .item .pricew .scart image{
+    width: 55rpx;
+    height: 55rpx;
+    display: block;
+}

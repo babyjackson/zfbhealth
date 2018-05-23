@@ -1,0 +1,63 @@
+Page({
+  data: {
+    tabArr:{cur:0},
+    recom:[
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      }
+    ]
+  },
+  onLoad() {},
+  /**tab切换**/
+  tabChange(e){
+    let idx = e.target.dataset.index;
+    this.setData({
+      "tabArr.cur":idx
+    })
+  }
+});

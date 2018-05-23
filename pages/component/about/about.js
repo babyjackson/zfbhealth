@@ -1,0 +1,37 @@
+Page({
+  data: {
+    contact:[
+      {
+        ico:"/images/aboutdh.png",
+        lab:"电话",
+        ways:"15647853210"
+      },
+      {
+        ico:"/images/aboutwx.png",
+        lab:"微信",
+        ways:"15647853210"
+      },
+      {
+        ico:"/images/aboutqq.png",
+        lab:"QQ",
+        ways:"24587952"
+      },
+      {
+        ico:"/images/aboutyj.png",
+        lab:"邮箱",
+        ways:"15647853210@qq.com"
+      },
+      {
+        ico:"/images/aboutlxr.png",
+        lab:"联系人",
+        ways:"胡一天"
+      },
+      {
+        ico:"/images/aboutdz.png",
+        lab:"地址",
+        ways:"南京市鼓楼区上海路清华大厦"
+      }
+    ]
+  },
+  onLoad() {},
+});

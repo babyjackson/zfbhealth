@@ -1,0 +1,111 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after{
+    clear:both;
+    height: 0;
+    display: block;
+    content: ".";
+    visibility:hidden;
+}
+.h-90{
+    height: 90rpx;
+}
+.h-50{
+    height: 50rpx;
+}
+.h-40{
+    height: 40rpx;
+}
+page{
+    background:#f7f7f7;
+}
+.hasaddr{
+    width: 750rpx;
+}
+.hasaddr .item{
+    width: 750rpx;
+    height: 125rpx;
+    background: #ffffff;
+    margin-bottom: 15rpx;
+}
+.hasaddr .item .addr{
+    font-size: 26rpx;
+    color: #0b0b0b;
+    line-break: 35rpx;
+    height:35rpx;
+    overflow: hidden;
+    padding: 40rpx 20rpx 0 20rpx
+}
+.hasaddr .item .linkman{
+    font-size: 24rpx;
+    color: #9c9a9f;
+    line-height: 30rpx;
+    padding: 0 20rpx;
+}
+/*** 没有收货地址 ****/
+.noaddr{
+    width: 750rpx;
+}
+.noaddr .figure{
+    width: 215rpx;
+    height: 215rpx;
+    display: block;
+    margin: 0 auto;
+}
+.noaddr .figure image{
+    display: block;
+    width: 215rpx;
+    height: 215rpx;
+}
+.noaddr .tips{
+    font-size: 24rpx;
+    color: #7f7d7f;
+    text-align: center;
+    line-height: 30rpx;
+}
+.noaddr .addbtn{
+    width: 675rpx;
+    height: 90rpx;
+    border-radius: 10rpx;
+    background: #39bb0b;
+    font-size: 36rpx;
+    color: #ffffff;
+    line-height: 90rpx;
+    margin: 0 auto;
+    text-align: center;
+}
+/*** 有地址btn ****/
+/*** hasaddbtn ****/
+.hasaddbtn{
+    width: 750rpx;
+    height: 80rpx;
+    background: #fff;
+    border-top:2rpx solid #e7e7e7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.hasaddbtn .btn{
+    width: 260rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 24rpx;
+    color: #0a0a08;
+    line-height: 80rpx;
+    text-indent: 10rpx;
+}
+.hasaddbtn .btn .ico{
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin: 20rpx 0;
+}
+.hasaddbtn .btn .ico image{
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+}

@@ -1,0 +1,83 @@
+.h-50{
+    height: 50rpx;
+}
+.searchW{
+    height: 60rpx;
+    width: 750rpx;
+    padding: 15rpx 0;
+    background: #eeeeee;
+}
+.search{
+    margin: 0 auto;
+    width: 710rpx;
+    height: 60rpx;
+    background: #fefefe;
+    border-radius: 30rpx;
+    overflow: hidden;
+}
+.search .inp{
+    display: block;
+    width: 590rpx;
+    height: 60rpx;
+    font-size: 25rpx;
+    color: #cfcfcf;
+    border: 0;
+    outline: 0;
+    margin-left: 30rpx;
+}
+.search .btn{
+    width: 70rpx;
+    height: 60rpx;
+    display: block;
+    border-radius: 0;
+    border: 0;
+}
+.search .btn icon{
+    display: block;
+}
+.goodlist{
+    background: #fff;
+}
+.goodlist .item{
+    padding: 25rpx 20rpx;
+    border-bottom: 2rpx solid #e7e7e6;
+}
+.goodlist .item .figure{
+    width: 280rpx;
+    height: 280rpx;
+    display: block;
+    border: 2rpx solid #eeeeee;
+}
+.goodlist .item .figure image{
+    display: block;
+    width: 280rpx;
+    height: 280rpx;
+}
+.goodlist .item .content{
+    width: 415rpx;
+    height: 280rpx;
+    overflow: hidden;
+}
+.goodlist .item .content .tit{
+    font-size: 35rpx;
+    color: #212121;
+    padding: 15rpx 0;
+    height: 120rpx;
+    line-height: 65rpx;
+    overflow: hidden;
+}
+.goodlist .item .content .date{
+    font-size: 28rpx;
+    color: #b0b0b0;
+}
+.goodlist .item .content .golook{
+    width: 130rpx;
+    height: 55rpx;
+    border-radius: 25rpx;
+    background: #46be05;
+    overflow: hidden;
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+    line-height: 55rpx;
+}

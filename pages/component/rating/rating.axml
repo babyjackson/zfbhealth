@@ -1,0 +1,131 @@
+<view class="container">
+  <form onSubmit="" onReset="">
+    <view class="h-10"></view>
+    <view class="ragoods clearfix">
+      <view class="figure fl">
+        <image src="/images/allimg.jpg"/>
+      </view>
+      <view class="tit fl">Dreamtimes K1梦幻三部曲套装男士护肤品 亮肤保湿补水控油</view>
+      <view class="dl fr">
+        <view class="price">¥49.90</view>
+        <view class="h-50"></view>
+        <view class="num">X1</view>
+      </view>
+    </view>
+    <view class="xian3"></view>
+    <view class="con">
+      <view class="h-45"></view>
+      <!--描述相符-->
+      <view class="section clearfix">
+        <view class="lab fl">描述相符</view>
+        <view class="starw fl">
+          <view class="hstar clearfix">
+            <view class="star fl" class="fl" a:for="{{hstar}}">
+              <image src="{{item}}"/>
+            </view>
+          </view>
+          <view class="ystar">
+            <view class="star fl" class="fl" a:for="{{starone.star}}">
+              <image src="{{item}}"/>
+            </view>
+          </view>
+          <view class="ystar">
+            <view class="star fl" data-name="ms" onTap="starselect" class="fl" a:for="{{hstar}}" a:for-index="index" data-index="{{index}}"></view>
+          </view>
+        </view>
+      </view>
+      <view class="h-35"></view>
+      <!--商品质量-->
+      <view class="section clearfix">
+        <view class="lab fl">商品质量</view>
+        <view class="starw fl">
+          <view class="hstar clearfix">
+            <view class="star fl" class="fl" a:for="{{hstar}}">
+              <image src="{{item}}"/>
+            </view>
+          </view>
+          <view class="ystar">
+            <view class="star fl" class="fl" a:for="{{startwo.star}}">
+              <image src="{{item}}"/>
+            </view>
+          </view>
+          <view class="ystar">
+            <view class="star fl" data-name="zl" onTap="starselect" class="fl" a:for="{{hstar}}" a:for-index="index" data-index="{{index}}"></view>
+          </view>
+        </view>
+      </view>
+      <view class="h-45"></view>
+    </view>
+    <view class="xian3"></view>  
+    <view class="con">
+      <view class="texta">
+        <textarea placeholder="请留下您宝贵的评价" />
+      </view>
+    </view>
+    <view class="xian3"></view>
+    <view class="con">
+      <view class="chooseimg clearfix">
+        <view class="cimg fl" onTap="chooseImage">
+          <image src="/images/chooseimg.jpg"/>
+        </view>
+        <view class="showimg fl">
+          <view class="simg fl" a:for="{{chooseimg}}">
+            <image src="{{item}}"/>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="h-15"></view>
+    <view class="con">
+      <view class="seller clearfix">
+        <view class="figure fl">
+          <image src="/images/allimg.jpg"/>
+        </view>
+        <view class="dl fl">
+          <view class="tit">琪琪女鞋</view>
+          <view class="name">卖家：君山第一</view>
+        </view>
+      </view>
+    </view>
+    <view class="xian3"></view>
+    <view class="con">
+      <view class="h-20"></view>
+      <view class="section clearfix">
+        <view class="lab fl">服务满意</view>
+        <view class="starw fl">
+          <view class="hstar clearfix">
+            <view class="star fl" class="fl" a:for="{{hstar}}">
+              <image src="{{item}}"/>
+            </view>
+          </view>
+          <view class="ystar">
+            <view class="star fl" class="fl" a:for="{{starthree.star}}">
+              <image src="{{item}}"/>
+            </view>
+          </view>
+          <view class="ystar">
+            <view class="star fl" data-name="my" onTap="starselect" class="fl" a:for="{{hstar}}" a:for-index="index" data-index="{{index}}"></view>
+          </view>
+        </view>
+      </view>
+      <view class="h-20"></view>
+    </view>
+    <!--评价-->
+    <view class="h-15"></view>
+    <view class="con">
+      <view class="foot clearfix">
+        <view class="fl check">
+          <view class="checkbox clearfix" onTap="selectList">
+            <icon class="fl" a:if="{{select}}" type="success" color="#46be05" size="20"></icon>
+            <view class="circle fl" a:else></view>
+            <checkbox checked="true" style="opacity:0;position:absolute;left:30rpx;top:20rpx;"/>
+            <text class="checkbox-text">匿名评价</text>
+          </view>
+        </view>
+        <view class="fr issuebtn">
+          <button type="default" class="btn"> 发表评论 </button>
+        </view>
+      </view>
+    </view>
+  </form>
+</view>

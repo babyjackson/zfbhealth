@@ -1,0 +1,86 @@
+@import '/pages/common/common.acss';
+page{
+    background: #ffffff;
+}
+.h70{
+    height: 70rpx;
+}
+.h95{
+    height: 95rpx;
+}
+.h120{
+    height: 120rpx;
+}
+.container{
+    width: 750rpx;
+}
+.payquan{
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    background: #01aaee;
+    text-align: center;
+    line-height: 180rpx;
+    font-size: 65rpx;
+    color: #fff;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.tips{
+    font-size: 30rpx;
+    line-height: 50rpx;
+    text-align: center;
+    color: #4d4f4d;
+    margin-top: 10rpx;
+}
+.amount{
+    color: #030503;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 50rpx;
+}
+.orderNum{
+    width: 750rpx;
+    height: 100rpx;
+    background: #efeff7;
+}
+.orderNum .label{
+    width: 185rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-indent: 15rpx;
+    font-size: 24rpx;
+    color: #4a4d48;
+}
+.orderNum .num{
+    width: 550rpx;
+    margin-right: 15rpx;
+    height: 100rpx;
+}
+.orderNum .num input{
+    width: 550rpx;
+    height: 100rpx;
+    text-align: right;
+    display: block;
+    font-size: 24rpx;
+    color: #9fa09d;
+    background:rgba(0, 0, 0, 0);
+    border: 0;
+    outline: 0;
+}
+.paybtn{
+    width: 715rpx;
+    height: 110rpx;
+    margin: 0 auto;
+}
+.paybtn button{
+    width: 715rpx;
+    height: 110rpx;
+    text-align: center;
+    line-height: 110rpx;
+    border-radius: 10rpx;
+    color: #fff;
+    background: #00aaee;
+    border:0;
+    outline: 0;
+}

@@ -1,0 +1,61 @@
+Page({
+  data: {
+    orderdetail:{
+      imgsrc:"/images/allimg.jpg",
+      tit:"碧生源牌减肥茶 2.5g/袋*15袋/盒*4盒正式更名为碧生源牌常青茶",
+      price:"49.9",
+      url:""
+    },
+    recom:[
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      },
+      {
+        imgsrc:"/images/allimg.jpg",
+        url:"",
+        tit:"瑞典进口ICA麦片50%水果坚果燕麦片",
+        price:"8.80"
+      }
+    ]
+  },
+  onLoad() {},
+});

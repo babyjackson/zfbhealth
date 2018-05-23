@@ -1,0 +1,30 @@
+<view class="container">
+  <!--banner-->
+  <view class="bannerW">
+    <view class="img">
+      <image src="/images/brandban.png"/>
+    </view>
+    <view class="banner">
+      <view class="h75"></view>
+      <view class="banico">
+        <image src="/images/brandico.png"/>
+      </view>
+      <view class="h25"></view>
+      <view class="czw">每天推荐的养生品牌</view>
+      <view class="h10"></view>
+      <view class="yw">— BRAND —</view>
+    </view>
+  </view>
+  <!--品牌-->
+  <view class="brandW">
+    <view class="brand clearfix">
+      <navigator class="item" a:for="{{brand}}" url="{{item.url}}">
+        <view class="figure"><image src="{{item.imgsrc}}"/></view>
+        <view class="dl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="txt">{{item.text}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

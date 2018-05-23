@@ -1,0 +1,71 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix::after{
+    clear:both;
+    display: block;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+}
+page{
+    background: #ffffff;
+}
+.article{
+    padding: 0 20rpx 25rpx 20rpx;
+    border-bottom: 2rpx dashed #e3e3e3;
+}
+.article .arttit{
+    font-size: 35rpx;
+    color: #333333;
+    line-height: 100rpx;
+}
+.article .text{
+    font-size: 23rpx;
+    color: #505050;
+    line-height: 50rpx;
+}
+/***联系方式**/
+.contact{
+    padding: 0 20rpx;
+}
+.contactw .tit{
+    height: 120rpx;
+    padding: 0 20rpx;
+    font-size: 35rpx;
+    color: #333333;
+    line-height: 120rpx;
+}
+.contact .item{
+    height: 40rpx;
+    font-size: 25rpx;
+    color: #505050;
+    line-height: 40rpx;
+    margin-bottom: 20rpx;
+}
+.contact .item .ico{
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin-right: 20rpx;
+}
+.contact .item .ico image{
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+}
+.contact .item .lab{
+    width: 105rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 25rpx;
+    color: #505050;
+}
+.contact .item .way{
+    font-size: 25rpx;
+    color: #505050;
+    line-height: 40rpx;
+}

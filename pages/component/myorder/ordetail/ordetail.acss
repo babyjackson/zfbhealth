@@ -1,0 +1,297 @@
+.h-60{
+    height: 60rpx;
+}
+.h-80{
+    height: 80rpx;
+}
+.h-10{
+    height: 10rpx;
+}
+.h-25{
+    height: 25rpx;
+}
+.h-30{
+    height: 30rpx;
+}
+page{
+    background: #eeeeee;
+}
+.orstatus{
+    width: 750rpx;
+    height: 195rpx;
+    background: linear-gradient(to right,#45bf09,#0be097);
+    overflow: hidden;
+}
+.orstatus .item{
+    width: 750rpx;
+    height: 195rpx;
+    overflow: hidden;
+}
+.orstatus .item .dl{
+    width: 400rpx;
+    margin-left: 75rpx;
+}
+.orstatus .item .dl .sta{
+    font-size: 35rpx;
+    color: #ffffff;
+    line-height: 40rpx;
+}
+.orstatus .item .dl .time{
+    font-size: 21rpx;
+    color: #ffffff;
+    line-height: 30rpx;
+    margin-top: 10rpx;
+}
+.orstatus .item .figure{
+    width: 165rpx;
+    height: 150rpx;
+    margin:30rpx 65rpx 0 0;
+}
+.orstatus .item .figure image{
+    display: block;
+    width: 165rpx;
+    height: 150rpx;
+}
+/***地址信息***/
+.addrinfo{
+    width: 750rpx;
+    height: 190rpx;
+    background: #ffffff;
+}
+.addrinfo .shr{
+    padding: 35rpx 50rpx 35rpx 90rpx;
+    font-size: 28rpx;
+    color: #1e1e1e;
+    line-height: 30rpx;
+}
+.addrinfo .shr .shrt{
+    font-size: 28rpx;
+    color: #1e1e1e;
+    line-height: 30rpx;
+}
+.addrinfo .addrs{
+    height: 70rpx;
+}
+.addrinfo .addrs .ico{
+    width: 45rpx;
+    height: 50rpx;
+    margin: 5rpx 20rpx;
+}
+.addrinfo .addrs .ico image{
+    display: block;
+    width: 45rpx;
+    height: 50rpx;
+}
+.addrinfo .addrs .addr{
+    width: 600rpx;
+    font-size: 25rpx;
+    color: #3f3f3f;
+    line-height: 35rpx;
+}
+.orgoods{
+    background: #fff;
+}
+.orgoods .dpname{
+    height: 35rpx;
+    padding: 25rpx 0;
+    overflow: hidden;
+}
+.orgoods .dpname .dpico{
+    width: 35rpx;
+    height: 35rpx;
+    margin: 0 20rpx 0 25rpx;
+}
+.orgoods .dpname .dpico image{
+    display: block;
+    width: 35rpx;
+    height: 35rpx;
+}
+.orgoods .dpname .dptit{
+    font-size: 25rpx;
+    color: #000000;
+    line-height: 40rpx;
+}
+.orgoods .dpname .dpalt{
+    width: 25rpx;
+    height: 35rpx;
+    margin-left: 20rpx;
+}
+.orgoods .dpname .dpalt image{
+    display: block;
+    width: 25rpx;
+    height: 35rpx;
+}
+/***商品***/
+.goods{
+    background: #fffbff;
+}
+.goods .item{
+    padding-top: 10rpx;
+}
+.goods .item .figure{
+    width: 160rpx;
+    height: 160rpx;
+    margin: 0 20rpx;
+}
+.goods .item .figure image{
+    display: block;
+    width: 160rpx;
+    height: 160rpx;
+}
+.goods .item .tit{
+    width: 380rpx;
+    font-size: 25rpx;
+    color: #000000;
+    line-height: 35rpx;
+}
+.goods .item .dl{
+    width: 140rpx;
+    text-align: right;
+    margin-right: 15rpx;
+    line-height: 35rpx;
+}
+.goods .item .dl .xpri{
+    font-size: 24rpx;
+    color: #000000;
+}
+.goods .item .dl .ypri{
+    color: #726f72;
+    font-size: 24rpx;
+}
+.goods .item .dl .num{
+    font-size: 24rpx;
+    color: #6e6c6e;
+}
+.payinfo{
+    background: #fff;
+    padding: 0 20rpx;
+}
+.payinfo .lab{
+    font-size: 25rpx;
+    line-height: 30rpx;
+    color: #141414;
+}
+.payinfo .value{
+    font-size: 25rpx;
+    line-height: 30rpx;
+    color: #141414;
+}
+.payinfo .value.lv{
+    color: #46be05;
+}
+.contactbtn{
+    background: #f6f6f6;
+    padding: 20rpx;
+}
+.contactbtn .btn{
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 350rpx;
+    height: 80rpx;
+    font-size: 28rpx;
+    color: #fefefe;
+    line-height: 80rpx;
+    border-radius: 5rpx;
+    overflow: hidden;
+}
+.contactbtn .btn .ico{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 20rpx 20rpx 0 80rpx;
+}
+.contactbtn .btn .ico image{
+    display: block;
+    width: 50rpx;
+    height: 50rpx;
+}
+.contactbtn .btn.btn1{
+    background: #46be05;
+}
+.contactbtn .btn.btn2{
+    background: #38a000;
+}
+.creat{
+    padding:30rpx 20rpx;
+    background: #fff;
+}
+.creat .time{
+    font-size: 24rpx;
+    color: #242524;
+    line-height: 30rpx;
+}
+/***猜你喜欢***/
+.recomW{
+    background: #efefef;
+}
+.recomW .bigtit{
+    width: 750rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    display: block;
+    background: #eeeeee;
+    font-size: 28rpx;
+    color: #212121;
+    text-align: center;
+}
+.recom{
+    width: 715rpx;
+    margin: 0rpx auto;
+    padding: 0rpx 0 0rpx 0;
+}
+.recom .item{
+    width: 350rpx;
+    height: 535rpx;
+    display: block;
+    border:2rpx solid #f1f1f1;
+    overflow: hidden;
+    background: #ffffff;
+}
+.recom .item:nth-of-type(odd){
+    float:left;
+}
+.recom .item:nth-of-type(even){
+    float:right;
+}
+.recom .item .figure{
+    width: 325rpx;
+    height: 340rpx;
+    margin: 0 auto;
+}
+.recom .item .figure image{
+    width: 325rpx;
+    height: 340rpx;
+    display: block;
+}
+.recom .item .tit{
+    height: 80rpx;
+    line-height: 40rpx;
+    width: 325rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 25rpx;
+    color: #212121;
+}
+.recom .item .pricew{
+    width: 325rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recom .item .pricew .pri{
+    font-size: 30rpx;
+    color: #46be05;
+    line-height: 55rpx;
+}
+.recom .item .pricew .scart{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #46be05;
+}
+.recom .item .pricew .scart image{
+    width: 55rpx;
+    height: 55rpx;
+    display: block;
+}

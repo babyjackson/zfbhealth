@@ -1,0 +1,96 @@
+@import '/pages/common/common.acss';
+page{
+    background: #fff;
+}
+.tabnav{
+    width: 750rpx;
+    height: 70rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    display: flex;
+}
+.tabnav .dh{
+    flex: 1;
+    height: 69rpx;
+    text-align: center;
+    color: #2e2e2e;
+    border-bottom: 3rpx solid rgba(0, 0, 0, 0);
+    line-height: 69rpx;
+    font-size: 23rpx;
+}
+.tabnav .dh.active{
+    color: #46be05;
+    border-bottom: 3rpx solid #46be05;
+}
+.conw .con-item{
+    display: none;
+}
+.conw .con-item.on{
+    display: block;
+}
+.health{
+    margin-top: 15rpx;
+    background: #fff;
+}
+.health .item{
+    width: 750rpx;
+    height: 655rpx;
+    display: block;
+    background: #fff;
+    overflow: hidden;
+}
+.health .item .figure{
+    width: 750rpx;
+    height: 420rpx;
+}
+.health .item .figure image{
+    width: 750rpx;
+    height: 420rpx;
+    display: block;
+}
+.health .item .dl{
+    width: 720rpx;
+    height: 210rpx;
+    margin: 0 auto;
+}
+.health .item .dl .tit{
+    height: 55rpx;
+    line-height: 55rpx;
+    font-size: 28rpx;
+    color: #201e1e;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+.health .item .dl .txt{
+    height: 70rpx;
+    font-size: 21rpx;
+    color: #666666;
+    line-height: 35rpx;
+    overflow: hidden;
+}
+.health .item .dl .kj{
+    width: 375rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+    font-size: 21rpx;
+    color: #a9a9a9;
+    margin-top: 10rpx;
+}
+.health .item .dl .kj .ys{
+    width: 105rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.health .item .dl .kj .zan{
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.health .item .dl .kj .zan image{
+    width: 35rpx;
+    height: 40rpx;
+    display: block;
+}
+.health .item .dl .kj .date{
+    margin-left: 20rpx;
+    line-height: 40rpx;
+}

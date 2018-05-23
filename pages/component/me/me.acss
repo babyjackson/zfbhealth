@@ -1,0 +1,113 @@
+@import '/pages/common/common.acss';
+page{
+    background:#ffffff;
+}
+.h95{
+    height: 95rpx;
+}
+.h35{
+    height: 35rpx;
+}
+.bannerw{
+    width: 750rpx;
+    height: 370rpx;
+    display: block;
+    position: relative;
+}
+.bannerw .imgbg{
+    width: 750rpx;
+    height: 370rpx;
+    display: block;
+}
+.bannerw .imgbg image{
+    width: 750rpx;
+    height: 370rpx;
+    display: block;
+}
+.bannerw .ban{
+    width: 750rpx;
+    height: 370rpx;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+}
+.portrait{
+    width: 165rpx;
+    height: 165rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3rpx solid #fff;
+    margin-left: 50rpx;
+}
+.portrait image{
+    width: 165rpx;
+    height: 165rpx;
+    display: block;
+}
+.bannerw .username{
+    width: 330rpx;
+    height: 165rpx;
+    line-height: 165rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+    margin-left: 65rpx;
+}
+.com_sty{
+    width: 750rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 2rpx solid #e5e5e5;
+}
+.com_sty .cap{
+    width: 160rpx;
+    height: 90rpx;
+    line-height:90rpx;
+    font-size: 26rpx;
+    color: #403f3f;
+    margin-left: 25rpx;
+}
+.com_sty .altr{
+    width: 195rpx;
+    height: 90rpx;
+    font-size: 24rpx;
+    color: #3b3c3b;
+    line-height: 90rpx;
+}
+.com_sty .altr text{
+    line-height: 90rpx;
+}
+.com_sty .altr image{
+    display: block;
+    width: 20rpx;
+    height: 30rpx;
+    margin: 28rpx 20rpx 0 0;
+}
+.ordersw{
+    width: 750rpx;
+    height: 180rpx;
+    display: flex;
+    border-bottom: 2rpx solid #e6e8e6;
+}
+.ordersw .item{
+    flex: 1;
+    height: 180rpx;
+}
+.ordersw .item .figure{
+    width: 60rpx;
+    height: 60rpx;
+    display: block;
+    margin: 0 auto;
+}
+.ordersw .item .figure image{
+    width: 60rpx;
+    height: 60rpx;
+    display: block;
+}
+.ordersw .item .tit{
+    height: 35rpx;
+    line-height: 35rpx;
+    text-align: center;
+    margin-top: 10rpx;
+    font-size: 25rpx;
+    color: #5e5655;
+}

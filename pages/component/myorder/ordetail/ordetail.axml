@@ -1,0 +1,134 @@
+<view class="container">
+  <!--订单状态-->
+  <view class="orstatus">
+    <view class="item clearfix" a:if="{{status.cur == 0}}">
+      <view class="dl fl">
+        <view class="h-60"></view>
+        <view class="sta">等待买家付款</view>
+        <view class="time">剩23小时59分钟自动关闭</view>
+      </view>
+      <view class="figure fr">
+        <image src="/images/status0.png"/>
+      </view>
+    </view>
+    <view class="item clearfix" a:elif="{{status.cur == 1}}">
+      <view class="dl fl">
+        <view class="h-60"></view>
+        <view class="sta">买家已付款</view>
+        <view class="time">您已成功订购该商品！</view>
+      </view>
+      <view class="figure fr">
+        <image src="/images/status1.png"/>
+      </view>
+    </view>
+    <view class="item clearfix" a:elif="{{status.cur == 2}}">
+      <view class="dl fl">
+        <view class="h-60"></view>
+        <view class="sta">卖家已发货</view>
+        <view class="time">还剩9天23小时自动确认收货</view>
+      </view>
+      <view class="figure fr">
+        <image src="/images/status2.png"/>
+      </view>
+    </view>
+    <view class="item clearfix" a:else="{{status.cur == 3}}">
+      <view class="dl fl">
+        <view class="h-80"></view>
+        <view class="sta">交易成功</view>
+      </view>
+      <view class="figure fr">
+        <image src="/images/status3.png"/>
+      </view>
+    </view>
+  </view>
+  <!--收货人-->
+  <view class="addrinfo">
+    <view class="shr clearfix">
+      <view class="shrt fl">收货人：张某某</view>
+      <view class="fr">12345678911</view>
+    </view>
+    <view class="addrs clearfix">
+      <view class="ico fl"><image src="/images/oraddrico.png"/></view>
+      <view class="addr fl">收货地址：江苏省南京市秦淮区珠江路１５号某某大厦121室</view>
+    </view>
+  </view>
+  <view class="h-10"></view>
+  <view class="orgoods">
+    <view class="dpname clearfix">
+      <view class="dpico fl">
+        <image src="/images/dpico.png"/>
+      </view>
+      <view class="dptit fl">西西比小妞</view>
+      <view class="dpalt fl"><image src="/images/altr.png"/></view>
+    </view>
+    <!--goods-->
+    <view class="goods" a:for="{{orgoods.goods}}" a:for-index="index">
+      <view class="item clearfix">
+        <view class="figure fl">
+          <image src="{{item.img}}"/>
+        </view>
+        <view class="tit fl">{{item.tit}}</view>
+        <view class="dl fr">
+          <view class="xpri">¥{{item.xpri}}</view>
+          <view class="ypri">¥{{item.ypri}}</view>
+          <view class="num">X{{item.num}}</view>
+        </view>
+      </view>
+      <view class="h-25"></view>
+    </view>
+  </view>
+  <!--支付-->    
+  <view class="payinfo">
+    <view class="h-30"></view>
+    <view class="pay clearfix">
+      <view class="lab fl">支付方式</view>
+      <view class="value fr">微信支付</view>
+    </view>
+    <view class="h-30"></view>
+    <view class="yf clearfix">
+      <view class="lab fl">运费</view>
+      <view class="value fr">¥0.00</view>
+    </view>
+    <view class="h-30"></view>
+    <view class="payment clearfix">
+      <view class="lab fl">实付款（含运费）</view>
+      <view class="value fr lv">¥45.00</view>
+    </view>
+    <view class="h-30"></view>
+  </view>
+  <view class="contactbtn clearfix">
+    <view class="btn fl clearfix btn1">
+      <view class="ico fl"><image src="/images/kefu.png"/></view>
+      联系卖家
+    </view>
+    <view class="btn fr btn2">
+      <view class="ico fl"><image src="/images/dianh.png"/></view>
+      拨打电话
+    </view>
+  </view>
+  <!--创建时间-->
+  <view class="creat">
+    <view class="time">创建时间：2017-12-09 18:33:11</view>
+    <view class="time">付款时间：2017-12-09 18:33:11</view>
+  </view>
+   <!--猜你喜欢-->
+  <view class="recomW">
+      <view class="bigtit">
+          猜你喜欢
+      </view>
+      <view class="recom clearfix">
+          <navigator class="item" a:for="{{recom}}">
+              <view class="h20"></view>
+              <view class="figure">
+              <image src="{{item.imgsrc}}"/>
+              </view>
+              <view class="h15"></view>
+              <view class="tit">{{item.tit}}</view>
+              <view class="pricew clearfix">
+              <view class="pri fl">￥{{item.price}}</view>
+              <view class="scart fr"><image src="/images/scartico.png"/></view>
+              </view>
+          </navigator>
+      </view>
+  </view>
+</view>

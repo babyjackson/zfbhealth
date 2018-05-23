@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="h70"></view>
+  <view class="payquan">
+    ¥
+  </view>
+  <view class="tips">付款成功</view>
+  <view class="amount">¥151.10</view>
+  <view class="h95"></view>
+  <view class="orderNum clearfix">
+    <view class="label fl">订单号：</view>
+    <view class="num fl">
+      <input type="text" value="SH20171214170603582" disabled="true"/>
+    </view>
+  </view>
+  <view class="h120"></view>
+  <view class="paybtn">
+    <button class="btn" onTap="navto"> 支付宝 </button>
+  </view>
+</view>

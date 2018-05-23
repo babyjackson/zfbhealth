@@ -1,0 +1,52 @@
+<view class="container">
+  <!--下拉-->
+  <view a:if="{{listData}}" class="a-dropdown-wrapper {{active ? 'expand' : ''}}">
+    <view id="a-dropdown-nav" class="a-dropdown-nav">
+      <block a:for="{{listData}}">
+        <view class="a-dropdown-nav-item {{ active && selectedNav == index ? 'active' : ''}}" onTap="_onNavItemTap" data-index={{index}}>
+            <text>{{item.nav}}</text>
+            <view class="triangle {{item.hasalt == 1 ?'':'hide'}}"></view>
+        </view>
+      </block>
+    </view>
+    <scroll-view class="a-dropdown-contents">
+      <block a:for="{{listData}}" a:for-item="list" a:for-index="parentIndex">
+        <view hidden="{{selectedNav !== parentIndex}}">
+          <view class="a-dropdown-list-items {{active? 'show' : ''}}">
+            <block a:if="{{list.data}}" a:for="{{list.data}}">
+                <view class="a-dropdown-list-item {{index !== (list.data.length - 1) ? '': 'last'}} {{index === list.selectedItem ? 'selected': ''}}"
+                    catchTap="_catchListItemTap" data-index="{{index}}" data-parentIndex="{{parentIndex}}" data-title="{{item.title}}">
+                    <view class="a-dropdown-list-item-line">
+                        <text class="a-dropdown-list-item-content">{{item.title}}</text>
+                        <view class="a-dropdown-list-item-check"/>
+                        <view class="a-dropdown-list-item-bottom" />
+                    </view>
+                </view>
+            </block>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <view class="a-dropdown-placeholder"></view>
+    <view class="a-dropdown-bg" onTap="_catchBgTap"></view>
+  </view>
+  <!--content产品-->
+  <view class="con_listW">
+    <view class="recomW">
+      <view class="recom clearfix">
+        <navigator class="item" a:for="{{recom}}" url="{{item.url}}">
+          <view class="h20"></view>
+          <view class="figure">
+            <image src="{{item.imgsrc}}"/>
+          </view>
+          <view class="h15"></view>
+          <view class="tit">{{item.tit}}</view>
+          <view class="pricew clearfix">
+            <view class="pri fl">￥{{item.price}}</view>
+            <view class="scart fr"><image src="/images/scartico.png"/></view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

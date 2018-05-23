@@ -1,0 +1,277 @@
+<view class="container">
+    <view class="tabw">
+      <view class="tab">
+        <view class="tab-item {{tabArr.cur == 0 ? 'active':''}}" data-index="0" onTap="changetab">全部<text>1</text></view>
+        <view class="tab-item {{tabArr.cur == 1 ? 'active':''}}" data-index="1" onTap="changetab">待付款<text>1</text></view>
+        <view class="tab-item {{tabArr.cur == 2 ? 'active':''}}" data-index="2" onTap="changetab">已付款</view>
+        <view class="tab-item {{tabArr.cur == 3 ? 'active':''}}" data-index="3" onTap="changetab">待收货</view>
+        <view class="tab-item {{tabArr.cur == 4 ? 'active':''}}" data-index="4" onTap="changetab">待评价</view>
+      </view>
+    </view>
+    <view class="con-itme {{tabArr.cur == 0 ? 'on':''}}">
+        <view class="hasorder" a:if="{{true}}">
+            <!-- 待付款 -->
+            <view class="obligation">
+                <navigator class="item" a:for="{{obligation}}" url="{{item.url}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="btn clearfix">
+                        <view class="fr btn1">付款</view>
+                        <view class="fr btn2">取消订单</view>
+                    </view>
+                </navigator>
+            </view>
+            <!-- 已付款 -->
+            <view class="paid">
+                <navigator class="item" a:for="{{paid}}" url="{{item.url}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="total">
+                        合计：<text>¥85.00</text>
+                    </view>
+                    <view class="btn clearfix">
+                        <view class="fr btn2">提醒商家发货</view>
+                    </view>
+                </navigator>
+            </view>
+            <!-- 待收货 -->
+            <view class="wait">
+                <navigator class="item" a:for="{{wait}}" url="{{item.url}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="total">
+                        合计:<text>¥85.00</text>
+                    </view>
+                    <view class="btn clearfix">
+                        <view class="fr btn1">确认收货</view>
+                        <view class="fr btn2">查看物流</view>
+                    </view>
+                </navigator>
+            </view>
+            <!-- 待评价 -->
+            <view class="rating">
+                <navigator class="item" a:for="{{rating}}" url="{{item.url}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="btn clearfix">
+                        <navigator class="fr btn1" url="/pages/component/rating/rating">评价</navigator>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        <view class="noorder" a:else>
+            <view class="h-180"></view>
+            <view class="figure">
+                <image src="/images/noorder.png"/>
+            </view>
+            <view class="h-30"></view>
+            <view class="tips">您还没有相关订单哦！</view>
+            <view class="text">去看看有哪些想买的</view>
+            <view class="h-165"></view>
+        </view>
+    </view>
+    <view class="con-itme {{tabArr.cur == 1 ? 'on':''}}">
+        <view class="hasorder" a:if="{{obligation}}">
+            <!-- 待付款 -->
+            <view class="obligation">
+                <view class="item" a:for="{{obligation}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="btn clearfix">
+                        <view class="fr btn1">付款</view>
+                        <view class="fr btn2">取消订单</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="noorder" a:else>
+            <view class="h-180"></view>
+            <view class="figure">
+                <image src="/images/noorder.png"/>
+            </view>
+            <view class="h-30"></view>
+            <view class="tips">您还没有相关订单哦！</view>
+            <view class="text">去看看有哪些想买的</view>
+            <view class="h-165"></view>
+        </view>
+    </view>
+    <view class="con-itme {{tabArr.cur == 2 ? 'on':''}}">
+        <view class="hasorder" a:if="{{paid}}">
+            <!-- 已付款 -->
+            <view class="paid">
+                <view class="item" a:for="{{paid}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="total">
+                        合计：<text>¥85.00</text>
+                    </view>
+                    <view class="btn clearfix">
+                        <view class="fr btn2">提醒商家发货</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="noorder" a:else>
+            <view class="h-180"></view>
+            <view class="figure">
+                <image src="/images/noorder.png"/>
+            </view>
+            <view class="h-30"></view>
+            <view class="tips">您还没有相关订单哦！</view>
+            <view class="text">去看看有哪些想买的</view>
+            <view class="h-165"></view>
+        </view>
+    </view>
+    <view class="con-itme {{tabArr.cur == 3 ? 'on':''}}">
+        <view class="hasorder" a:if="{{wait}}">
+            <!-- 待收货 -->
+            <view class="wait">
+                <view class="item" a:for="{{wait}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="total">
+                        合计:<text>¥85.00</text>
+                    </view>
+                    <view class="btn clearfix">
+                        <view class="fr btn1">确认收货</view>
+                        <view class="fr btn2">查看物流</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="noorder" a:else>
+            <view class="h-180"></view>
+            <view class="figure">
+                <image src="/images/noorder.png"/>
+            </view>
+            <view class="h-30"></view>
+            <view class="tips">您还没有相关订单哦！</view>
+            <view class="text">去看看有哪些想买的</view>
+            <view class="h-165"></view>
+        </view>    
+    </view>
+    <view class="con-itme {{tabArr.cur == 4 ? 'on':''}}">
+        <view class="hasorder" a:if="{{rating}}">
+            <!-- 待评价 -->
+            <view class="rating">
+                <view class="item" a:for="{{rating}}">
+                    <view class="storetit">{{item.storetit}}</view>
+                    <view class="igoods clearfix" a:for="{{item.list}}" a:for-item="olist">
+                        <view class="figure fl">
+                            <image src="{{olist.gimg}}"/>
+                        </view>
+                        <view class="gtit fl">{{olist.gtit}}</view>
+                        <view class="dl fr">
+                            <view class="ypri">¥{{olist.ypri}}</view>
+                            <view class="xpri">¥{{olist.xpri}}</view>
+                            <view class="num">X{{olist.num}}</view>
+                        </view>
+                    </view>
+                    <view class="btn clearfix">
+                        <navigator class="fr btn1" url="/pages/component/rating/rating">评价</navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="noorder" a:else>
+            <view class="h-180"></view>
+            <view class="figure">
+                <image src="/images/noorder.png"/>
+            </view>
+            <view class="h-30"></view>
+            <view class="tips">您还没有相关订单哦！</view>
+            <view class="text">去看看有哪些想买的</view>
+            <view class="h-165"></view>
+        </view>  
+    </view>
+    <!--猜你喜欢-->
+    <view class="recomW">
+        <view class="bigtit">
+            猜你喜欢
+        </view>
+        <view class="recom clearfix">
+            <navigator class="item" a:for="{{recom}}">
+                <view class="h20"></view>
+                <view class="figure">
+                <image src="{{item.imgsrc}}"/>
+                </view>
+                <view class="h15"></view>
+                <view class="tit">{{item.tit}}</view>
+                <view class="pricew clearfix">
+                <view class="pri fl">￥{{item.price}}</view>
+                <view class="scart fr"><image src="/images/scartico.png"/></view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

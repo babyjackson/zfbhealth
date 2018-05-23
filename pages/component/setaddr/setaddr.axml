@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="setaddrw"  a:if="{{address.length>0}}">
+    <view class="item"  a:for="{{address}}" a:for-index="index">
+      <view class="addrt">
+        <view class="addr">{{item.addr}}</view>
+        <view class="linkman">
+          <text>{{item.name}}</text>
+          <text>{{item.tel}}</text>
+        </view>
+      </view>
+      <view class="set clearfix">
+        <view class="default fl" onTap="setdafault" data-index="{{index}}">
+          <view class="mico fl" a:if="{{dafault == index}}">
+            <image src="/images/defaultaddr.png"/>
+          </view>
+          <view class="ico fl" a:else></view>
+          默认地址
+        </view>
+        <view class="delete fr" onTap="deleteaddr" data-index="{{index}}">
+          <view class="ico fl"><image src="/images/deleteaddr.png"/></view>
+          删除
+        </view>
+        <view class="editor fr">
+          <view class="ico fl"><image src="/images/editoraddr.png"/></view>
+          编辑
+        </view>
+      </view>
+    </view>
+    <!--底部-->
+    <navigator class="hasadd" url="/pages/component/shopc/editaddr/editaddr">
+      <view class="btn">
+        <view class="ico fl">
+          <image src="/images/addaddrico.png"/>
+        </view>
+        添加收货地址
+      </view>
+    </navigator>
+  </view>
+  <view a:else class="noaddr">
+    <view class="h-90"></view>
+    <view class="figure"><image src="/images/noaddrtips.png"/></view>
+    <view class="h-50"></view>
+    <view class="tips">您还没有地址哦，赶紧添加一个吧~</view>
+    <view class="h-40"></view>
+    <navigator url="/pages/component/shopc/editaddr/editaddr" class="addbtn">添加收货地址</navigator>
+  </view>
+</view>

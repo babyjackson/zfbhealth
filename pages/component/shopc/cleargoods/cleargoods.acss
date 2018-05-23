@@ -1,0 +1,36 @@
+.cleargoodxq{
+  width: 710rpx;
+  padding: 30rpx 20rpx;
+  background: #fff;
+  border-bottom: 2rpx solid #f7f7f7;
+}
+.cleargoodxq .figure{
+  width: 150rpx;
+  height: 150rpx;
+  overflow: hidden;
+}
+.cleargoodxq .figure image{
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+}
+.cleargoodxq .tit{
+  width: 325rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  color: #1c1d1c;
+  line-height: 30rpx;
+}
+.cleargoodxq .dl .price{
+  font-size: 28rpx;
+  color: #7d7a87;
+  line-height: 30rpx;
+  text-align: right;
+}
+.cleargoodxq .dl .num{
+  font-size: 28rpx;
+  color: #7d7a87;
+  line-height: 35rpx;
+  margin-top: 10rpx;
+  text-align: right;
+}

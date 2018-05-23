@@ -1,0 +1,37 @@
+Page({
+  data: {
+     clearfixgoods:[
+      {
+        tit:"阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼",
+        imgsrc:"/images/allimg.jpg",
+        price:"182.00",
+        num:"1"
+      },
+      {
+        tit:"阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼",
+        imgsrc:"/images/allimg.jpg",
+        price:"182.00",
+        num:"1"
+      },
+      {
+        tit:"阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼",
+        imgsrc:"/images/allimg.jpg",
+        price:"182.00",
+        num:"1"
+      },
+      {
+        tit:"阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼",
+        imgsrc:"/images/allimg.jpg",
+        price:"182.00",
+        num:"1"
+      },
+      {
+        tit:"阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼阿玛尼",
+        imgsrc:"/images/allimg.jpg",
+        price:"182.00",
+        num:"1"
+      }
+    ]
+  },
+  onLoad() {},
+});

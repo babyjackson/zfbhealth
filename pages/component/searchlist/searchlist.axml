@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="searchW">
+    <navigator class="search clearfix" open-type="redirect" url="/pages/component/search/search">
+      <input type="text" placeholder="" class="inp fl"/>
+      <button type="default" class="btn fr">
+        <icon type="search" size="20" color="#46be05" /> 
+      </button>
+    </navigator>
+  </view>
+  <!--搜索商品列表-->
+  <view class="goodlist">
+    <view class="item clearfix" a:for="{{goodlist}}">
+      <view class="figure fl">
+        <image src="{{item.img}}"/>
+      </view>
+      <view class="content fr">
+        <view class="tit">{{item.tit}}</view>
+        <view class="h-50"></view>
+        <view class="dd clearfix">
+          <view class="date fl">{{item.date}}</view>
+          <view class="golook fr">去看看</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

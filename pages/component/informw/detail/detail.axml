@@ -1,0 +1,76 @@
+<view class="container">
+    <view class="article">
+        <view class="h15"></view>
+        <view class="bigtit">{{article.bigtit}}</view>
+        <view class="tkj">
+            <view class="label fl">{{article.label}}</view>
+            <view class="date fl">{{article.date}}</view>
+        </view>
+        <view class="h30"></view>
+        <view class="p_txt">
+            {{article.desc}}
+        </view> 
+        <view class="h30"></view> 
+        <view class="img">
+            <image src="{{article.imgsrc}}"/>
+        </view>
+        <view class="h30"></view>
+        <view class="tit">{{article.tit1}}</view>
+        <view class="p_txt">{{article.txt1}}</view>
+        <view class="h30"></view>
+        <view class="p_txt">{{article.tit2}}</view>
+        <view class="p_txt">{{article.txt2}}</view>
+        <view class="h30"></view>
+    </view>
+    <view class="h15"></view>
+    <view class="maylook">
+        <view class="bigtit">你可能还会看</view>
+        <view class="inform">
+            <navigator class="item clearfix" a:for="{{inform}}" url="{{item.url}}">
+                <view class="h15"></view>
+                <view class="dl fl">
+                <view class="tit">{{item.tit}}</view>
+                <view class="h65"></view>
+                <view class="kj clearfix">
+                    <view class="ys fl">{{item.ys}}</view>
+                    <view class="zan fl clearfix">
+                    <image src="/images/lovexin.png" class="fl"/>
+                    <text>{{item.zan}}</text>
+                    </view>
+                    <view class="date fl">{{item.date}}</view>
+                </view>
+                </view>
+                <view class="figure fr">
+                <image src="{{item.imgsrc}}"/>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <!--底部-->    
+    <view class="h100"></view>
+    <view class="f_bottom">
+        <view class="bottom">
+            <view class="fl same">
+                <view class="num">366</view>
+                <view class="wp clearfix">
+                    <image src="/images/fabulous.png" class="fl"/>
+                    <text class="fl">点赞</text>
+                </view>
+            </view>
+            <view class="xian2 fl"></view>
+            <view class="fl same">
+                <view class="num">366</view>
+                <view class="wp clearfix">
+                    <image src="/images/smile.png" class="fl"/>
+                    <text class="fl">看过</text>
+                </view>
+            </view>
+            <view class="share fr">
+                <view class="wp clearfix">
+                    <image src="/images/share_ico.png" class="fl"/>
+                    <text class="fl">分享给朋友</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

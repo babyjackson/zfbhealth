@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/component/index",
+    "pages/component/brand/brand/brand",
+    "pages/component/brand/brandlist/brandlist",
+    "pages/component/informw/inform/inform",
+    "pages/component/informw/detail/detail",
+    "pages/component/me/me",
+    "pages/component/healthgoods/product/product",
+    "pages/component/healthgoods/gdetail/gdetail",
+    "pages/component/healthgoods/goodslist/goodslist",
+    "pages/component/liferoom/yst/yst",
+    "pages/component/shopc/scart/scart",
+    "pages/component/shopc/settle/settle",
+    "pages/component/shopc/editaddr/editaddr",
+    "pages/component/shopc/alipay/alipay",
+    "pages/component/shopc/paid/paid",
+    "pages/component/shopc/orderdetail/orderdetail",
+    "pages/component/shopc/chooseaddr/chooseaddr",
+    "pages/component/shopc/cleargoods/cleargoods",
+    "pages/component/about/about",
+    "pages/component/setaddr/setaddr",
+    "pages/component/myorder/order/order",
+    "pages/component/myorder/ordetail/ordetail",
+    "pages/component/rating/rating",
+    "pages/component/bind/bind",
+    "pages/component/search/search",
+    "pages/component/searchlist/searchlist"
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": true,
+    "defaultTitle": "中国养生资讯",
+    "backgroundColor": "#F5F5F9",
+    "titleBarColor":"#faf9f9",
+    "pullRefresh": false,
+    "allowsBounceVertical": true
+  },
+  "tabBar": {
+    "textColor": "#c5c5c5",
+    "selectedColor": "#46be05",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/component/index",
+        "icon":"/images/tarbar1.png",
+        "activeIcon":"/images/tarbar1-1.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "/pages/component/informw/inform/inform",
+        "icon":"/images/tarbar2.png",
+        "activeIcon":"/images/tarbar2-1.png",
+        "name": "资讯"
+      },
+      {
+        "pagePath": "pages/component/brand/brand/brand",
+        "icon":"/images/tarbar3.png",
+        "activeIcon":"/images/tarbar3-1.png",
+        "name": "品牌"
+      },
+      {
+        "pagePath": "pages/component/me/me",
+        "icon":"/images/tarbar4.png",
+        "activeIcon":"/images/tarbar4-1.png",
+        "name": "我的"
+      }
+    ]
+  },
+  "debug": true
+}

@@ -1,0 +1,615 @@
+@import '/pages/common/common.acss';
+.h15{
+    height: 15rpx;
+}
+.h10{
+    height: 10rpx;
+}
+.h60{
+    height: 60rpx;
+}
+.h25{
+    height: 25rpx;
+}
+.h20{
+    height: 20rpx;
+}
+.h40{
+    height: 40rpx;
+}
+page{
+    background: #eeeeee;
+}
+.bannerI{
+    width: 750rpx;
+    height: 550rpx;
+    position: relative;
+}
+.scroll-view_H{
+  white-space: nowrap;
+  display:flex;
+}
+.scroll-view-item_H{
+  flex-shrink:0;
+  flex-grow:0;
+  width: 300px;
+  height: 200px;
+}
+.bannerI .ban{
+    width: 750rpx;
+    height: 500rpx;
+    display: block;
+}
+.bannerI .ban .img{
+    width: 750rpx;
+    height: 500rpx;
+    display: block;
+    overflow:hidden;
+}
+.bannerI .ban .img image{
+    display: block;
+    width: 750rpx;
+    height: 500rpx;
+}
+.a-swiper-wrap{
+ position: absolute;
+ bottom: -50rpx;
+}
+.inputW{
+    height: 125rpx;
+    width: 750rpx;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 50rpx;
+}
+.inputW .imgbg{
+    width: 750rpx;
+    height: 125rpx;
+}
+.inputW .imgbg image{
+    width: 750rpx;
+    height: 125rpx;
+    display: block;
+}
+.inputW .input{
+    width: 715rpx;
+    height: 60rpx;
+    position: absolute;
+    top: 35rpx;
+    left: 18rpx;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 30rpx;
+    overflow: hidden;
+}
+.inputW .input input{
+    width: 620rpx;
+    height: 60rpx;
+    display: block;
+    outline: 0;
+    border: 0;
+    margin-left: 25rpx;
+    overflow: hidden;
+}
+.inputW .input button{
+    width: 70rpx;
+    height: 60rpx;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 0 30rpx 30rpx 0;
+    border: 0;
+    position: relative;
+    margin: 0;
+}
+.inputW .input button icon{
+    position: absolute;
+    top: 5rpx;
+    left: 5rpx;
+}
+.navlist{
+    width: 750rpx;
+    height: 260rpx;
+    background: #ffffff;
+    display: flex;
+}
+.navlist .li{
+    width: 20%;
+    height:215rpx;
+    overflow: hidden;
+    padding: 45rpx 0 0 0;
+}
+.navlist .li .figure{
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.navlist .li .figure image{
+    width: 125rpx;
+    height: 125rpx;
+}
+.navlist .li .text{
+    height: 30rpx;
+    overflow: hidden;
+    line-height: 30rpx;
+    text-align: center;
+    margin-top: 20rpx;
+    font-size: 25rpx;
+    color: #4e4e4e;
+}
+.everyDayBuy{
+    width:750rpx;
+    height: 650rpx;
+}
+.everyDayBuy .bigtit{
+    height: 75rpx;
+    width: 750rpx;
+    background: #eeeeee;
+}
+.everyDayBuy .bigtit image{
+    width: 325rpx;
+    height: 75rpx;
+    display: block;
+    margin: 0 auto;
+}
+.dayDayBuy{
+    height: 575rpx;
+    width: 750rpx;
+    background: #ffffff;
+}
+.dayDayBuy .item{
+    width: 187rpx;
+    height: 275rpx;
+    border-right: 1rpx solid #eeeeee;
+}
+
+.dayDayBuy .item .tit{
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    overflow: hidden;
+    font-size: 28rpx;
+    color: #000000;
+}
+.dayDayBuy .item .tips{
+    height: 25rpx;
+    line-height: 25rpx;
+    color: #46be05;
+    font-size: 21rpx;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 5rpx;
+}
+.dayDayBuy .item .figure{
+    width: 140rpx;
+    height: 130rpx;
+    margin: 25rpx auto 0;
+}
+.dayDayBuy .item .figure image{
+    width: 140rpx;
+    height: 130rpx;
+    display: block;
+}
+.dayDayBuy .item:nth-of-type(1),.dayDayBuy .item:nth-of-type(2){
+    height: 300rpx;
+    width: 374rpx;
+    border-bottom: 1rpx solid #eeeeee;
+}
+.dayDayBuy .item:nth-of-type(1){
+    border-right: 1rpx solid #eeeeee;
+}
+.dayDayBuy .item:nth-of-type(1) .figure,.dayDayBuy .item:nth-of-type(2) .figure{
+    width: 330rpx;
+    height: 150rpx;
+    display: block;
+    overflow: hidden;
+    margin: 25rpx auto 0;
+}
+
+.dayDayBuy .item:nth-of-type(1) image,.dayDayBuy .item:nth-of-type(2) image{
+    width: 140rpx;
+    height: 150rpx;
+    display: block;
+     margin-right: 25rpx;
+    }
+.todayRecomW{
+    width: 750rpx;
+    height: 285rpx;
+    display: block;
+    background: #ffffff;
+}
+
+.todayRecom{
+    width: 715rpx;
+    height: 250rpx;
+    border-radius: 8rpx;
+    overflow: hidden;
+    background: #46be05;
+    margin: 0 auto;
+}
+.todayRecom .bigtit{
+    height: 55rpx;
+    line-height: 55rpx;
+    text-align:center;
+    font-size: 28rpx;
+    color: #ffffff;
+}
+
+.todayRecom .recomW{
+    width: 700rpx;
+    height: 190rpx;
+    border-radius: 8rpx;
+    background: #ffffff;
+    margin: 0 auto;
+}
+.todayRecom .recomW .item{
+    width: 120rpx;
+    height: 160rpx;
+    display: block;
+    margin:0 25rpx;
+}
+.todayRecom .recomW .item .figure{
+    width: 120rpx;
+    height: 120rpx;
+    display: block;
+    margin: 15rpx 0;
+}
+.todayRecom .recomW .item .figure image{
+    width: 120rpx;
+    height: 120rpx;
+    display: block;
+}
+.todayRecom .recomW .item .tit{
+    height: 30rpx;
+    line-height: 30rpx;
+    overflow: hidden;
+    margin-top: 15rpx;
+    text-align: center;
+    font-size: 20rpx;
+    color: #0f0f0f;
+}
+.displayW{
+    width: 715rpx;
+    height: 390rpx;
+    display: block;
+    margin: 10rpx auto 0;
+    position: relative;
+}
+.displayW .imgbg{
+    width: 715rpx;
+    height: 390rpx;
+    display: block;
+}
+.displayW .imgbg image{
+    width: 715rpx;
+    height: 390rpx;
+    display: block;
+}
+.displayW .display{
+    width: 715rpx;
+    height: 390rpx;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+}
+
+.displayW .display .ico{
+    width: 110rpx;
+    height: 110rpx;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 0 auto;
+}
+.displayW .display .ico image{
+    width: 110rpx;
+    height: 110rpx;
+    display: block;
+}
+.displayW .display .tit{
+    height: 30rpx;
+    line-height: 30rpx;
+    text-align: center;
+    overflow: hidden;
+    font-size: 28rpx;
+    color: #ffffff;
+}
+.displayW .display .tips{
+    height: 25rpx;
+    line-height: 25rpx;
+    font-size: 20rpx;
+    text-align: center;
+}
+.displayW .display .tips .ti{
+    display: inline-block;
+    border-right:1rpx solid #fff;
+    padding-right: 10rpx; 
+    margin-left: 10rpx;
+    color: #fff;
+}
+.inform .item{
+    width: 750rpx;
+    height: 265rpx;
+    background: #ffffff;
+    margin-top: 15rpx;
+}
+.inform .item .dl{
+    width: 375rpx;
+    height: 265rpx;
+    margin-left: 20rpx;
+}
+.h15{
+    height: 15rpx;
+}
+.inform .item .dl .tit{
+    font-size: 28rpx;
+    color: #373737;
+    display: block;
+    line-height: 55rpx;
+    height: 110rpx;
+    overflow: hidden;
+}
+.inform .item .dl .kj{
+    width: 375rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+    font-size: 21rpx;
+    color: #a9a9a9;
+}
+.inform .item .dl .kj .ys{
+    width: 105rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.inform .item .dl .kj .zan{
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.inform .item .dl .kj .zan image{
+    width: 35rpx;
+    height: 40rpx;
+    display: block;
+}
+.inform .item .dl .kj .date{
+    margin-left: 20rpx;
+    line-height: 40rpx;
+}
+.inform .item .figure{
+    width: 315rpx;
+    height: 225rpx;
+    margin-right: 15rpx;
+}
+.h65{
+    height: 65rpx;
+}
+.inform .item .figure image{
+    width: 315rpx;
+    height: 225rpx;
+    display: block;
+}
+.brandc{
+    width: 750rpx;
+    height: 655rpx;
+    background: #fff;
+    margin-top: 15rpx;
+}
+.brand{
+    padding: 30rpx 0;
+}
+.brand .scroll-view_H{
+    white-space: nowrap;
+    display:flex;
+}
+.scroll-view-item_H{
+  flex-shrink:0;
+  flex-grow:0;
+}
+.brand .item{
+    width: 465rpx;
+    height: 580rpx;
+    border:2rpx solid #e5e5e5;
+    margin-left: 20rpx;
+    overflow: hidden;
+}
+.brand .item .figure{
+    width: 465rpx;
+    height: 345rpx;
+}
+.brand .item .figure image{
+    width: 465rpx;
+    height: 345rpx;
+    display: block;
+}
+.brand .item .dl{
+    width: 435rpx;
+    height: 210rpx;
+    margin: 10rpx auto;
+    overflow: hidden;
+    display: block;
+}
+.brand .item .dl .tit{
+    height: 55rpx;
+    overflow: hidden;
+    line-height: 55rpx;
+    font-size: 28rpx;
+    color: #4e4e4e;
+}
+.h30{
+    height: 30rpx;
+}
+.brand .item .dl .txt{
+    font-size:21rpx;
+    display: block;
+    color: #6a6a6a;
+    line-height: 30rpx;
+    height: 60rpx;
+    width: 435rpx;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.brand .item .dl .kj{
+    width: 435rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+    font-size: 21rpx;
+    color: #a9a9a9;
+}
+.brand .item .dl .kj .zan{
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.brand .item .dl .kj .zan image{
+    width: 35rpx;
+    height: 40rpx;
+    display: block;
+}
+.brand .item .dl .kj .date{
+    margin-left: 20rpx;
+    line-height: 40rpx;
+}
+.health{
+    margin-top: 15rpx;
+    background: #fff;
+}
+.health .item{
+    width: 750rpx;
+    height: 655rpx;
+    display: block;
+    background: #fff;
+    overflow: hidden;
+}
+.health .item .figure{
+    width: 750rpx;
+    height: 420rpx;
+}
+.health .item .figure image{
+    width: 750rpx;
+    height: 420rpx;
+    display: block;
+}
+.health .item .dl{
+    width: 720rpx;
+    height: 210rpx;
+    margin: 0 auto;
+}
+.health .item .dl .tit{
+    height: 55rpx;
+    line-height: 55rpx;
+    font-size: 28rpx;
+    color: #201e1e;
+    overflow: hidden;
+}
+.health .item .dl .txt{
+    height: 70rpx;
+    font-size: 21rpx;
+    color: #666666;
+    line-height: 35rpx;
+    overflow: hidden;
+}
+.health .item .dl .kj{
+    width: 375rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+    font-size: 21rpx;
+    color: #a9a9a9;
+}
+.health .item .dl .kj .ys{
+    width: 105rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.health .item .dl .kj .zan{
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.health .item .dl .kj .zan image{
+    width: 35rpx;
+    height: 40rpx;
+    display: block;
+}
+.health .item .dl .kj .date{
+    margin-left: 20rpx;
+    line-height: 40rpx;
+}
+.recomW{
+    background: #ffffff;
+}
+.recomW .bigtit{
+    width: 750rpx;
+    height: 75rpx;
+    display: block;
+    background: #eeeeee;
+}
+.recomW .bigtit image{
+    width: 400rpx;
+    height: 75rpx;
+    display: block;
+    margin: 0 auto;
+}
+.recom{
+    width: 715rpx;
+    margin: 0rpx auto;
+    padding: 20rpx 0;
+}
+.recom .item{
+    width: 350rpx;
+    height: 535rpx;
+    display: block;
+    border:2rpx solid #f1f1f1;
+    overflow: hidden;
+}
+.recom .item:nth-of-type(odd){
+    float:left;
+}
+.recom .item:nth-of-type(even){
+    float:right;
+}
+.recom .item .figure{
+    width: 325rpx;
+    height: 340rpx;
+    margin: 0 auto;
+}
+.recom .item .figure image{
+    width: 325rpx;
+    height: 340rpx;
+    display: block;
+}
+.recom .item .tit{
+    height: 80rpx;
+    line-height: 40rpx;
+    width: 325rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 25rpx;
+    color: #212121;
+}
+.recom .item .pricew{
+    width: 325rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recom .item .pricew .pri{
+    font-size: 30rpx;
+    color: #46be05;
+    line-height: 55rpx;
+}
+.recom .item .pricew .scart{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #46be05;
+}
+.recom .item .pricew .scart image{
+    width: 55rpx;
+    height: 55rpx;
+    display: block;
+}

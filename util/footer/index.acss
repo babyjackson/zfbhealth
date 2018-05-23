@@ -1,0 +1,34 @@
+.h20{
+    height: 20rpx;
+}
+.tabBar{
+    width: 750rpx;
+    height: 125rpx;
+    background: #fff;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+.tabBar .item{
+    width: 25%;
+    height: 140rpx;
+}
+.tabBar .item .ico{
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 auto;
+}
+.tabBar .item .ico image{
+    width: 60rpx;
+    height: 60rpx;
+    display: block;
+}
+.tabBar .item .tit{
+    font-size: 28rpx;
+    line-height: 35rpx;
+    text-align: center;
+    color: #c2c2c2;
+}
+.tabBar .item .selectedtit{
+    color: #46be05;
+}

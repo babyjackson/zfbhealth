@@ -1,0 +1,283 @@
+@import '/pages/common/common.acss';
+.h35{
+    height: 35rpx;
+}
+.h20{
+    height: 20rpx;
+}
+.h65{
+    height: 65rpx;
+}
+page{
+    background: #eee;
+}
+.bannerW{
+    width: 750rpx;
+    height: 495rpx;
+}
+.bannerW image{
+    width: 750rpx;
+    height: 495rpx;
+    display: block;
+}
+.navaid{
+    width: 750rpx;
+    height: 275rpx;
+    display: flex;
+    background: #ffffff;
+}
+.navaid .item{
+    width: 25%;
+    height: 275rpx;
+}
+.h45{
+    height: 45rpx;
+}
+.navaid .item .figure{
+    width: 128rpx;
+    height: 128rpx;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.navaid .item .figure image{
+    width: 128rpx;
+    height: 128rpx;
+    display: block;
+}
+.navaid .item .tit{
+    height: 35rpx;
+    line-height: 35rpx;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20rpx;
+    font-size: 28rpx;
+    color: #000000;
+}
+.boutiqueW{
+    width: 750rpx;
+    height: 425rpx;
+}
+.alltit{
+    width: 260rpx;
+    height:80rpx;
+    margin: 0 auto;
+}
+.alltit image{
+    width: 260rpx;
+    height: 80rpx;
+    display: block;
+}
+.boutique{
+    width: 750rpx;
+    height: 345rpx;
+    background: #fff;
+    overflow:hidden;
+    }
+.boutique .item{
+    width: 249rpx;
+    height: 345rpx;
+    border-right: 1rpx solid #f2f2f2;
+    position: relative;
+}
+.boutique .item .tips{
+    width: 65rpx;
+    height: 60rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.boutique .item .tips .ibg{
+    width: 65rpx;
+    height: 60rpx;
+    overflow: hidden;
+}
+.boutique .item .tips .ibg image{
+    width: 65rpx;
+    height: 60rpx;
+    display: block;
+}
+.boutique .item .tips .ts{
+    position: absolute;
+    width: 60rpx;
+    height: 60rpx;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 21rpx;
+    color: #ffffff;
+}
+.boutique .item:nth-last-of-type(){
+    border-right: 0;
+}
+.boutique .item .figure{
+    width: 215rpx;
+    height: 190rpx;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.boutique .item .figure image{
+    width: 215rpx;
+    height: 190rpx;
+    display: block;
+}
+.boutique .item .tit{
+    height: 30rpx;
+    overflow: hidden;
+    width: 215rpx;
+    margin: 0 auto;
+    font-size: 25rpx;
+    color: #212121;
+    line-height: 30rpx;
+}
+.boutique .item .price{
+    height: 30rpx;
+    line-height: 35rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #46be05;
+    overflow: hidden;
+    margin-top: 12rpx;
+}
+.latestW{
+    width: 750rpx;
+    height: 465rpx;
+    overflow: hidden;
+}
+.latest{
+    width: 750rpx;
+    height: 380rpx;
+    background: #ffffff;
+}
+.latest .bitem{
+    width: 374rpx;
+    height: 380rpx;
+    border-right: 1rpx solid #eeeeee;
+    position: relative;
+}
+.latest .bitem .figure{
+    width: 290rpx;
+    height: 300rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.latest .bitem .figure image{
+    display: block;
+    width: 290rpx;
+    height: 300rpx;
+}
+.latest .tips{
+    width: 140rpx;
+    height: 60rpx;
+    border-radius: 0 0 30rpx 0;
+    overflow: hidden;
+    background: #82b612;
+    font-size: 28rpx;
+    color: #ffffff;
+    line-height: 60rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.latest .sitem{
+    width: 375rpx;
+    height: 380rpx;
+    overflow: hidden;
+}
+.latest .sitem .skj{
+    width: 375rpx;
+    height: 189rpx;
+    position: relative;
+}
+.latest .sitem .skj:nth-of-type(1){
+    border-bottom: 1rpx solid #efefef;
+}
+.latest .sitem .skj .tit{
+    height: 80rpx;
+    width: 160rpx;
+    line-height: 40rpx;
+    font-size: 21rpx;
+    color: #212121;
+    margin-top: 65rpx;
+}
+.latest .sitem .skj .figure{
+    width: 175rpx;
+    height: 175rpx;
+    display: block;
+    overflow: hidden;
+    margin: 5rpx;
+}
+.latest .sitem .skj .figure image{
+    width: 175rpx;
+    height: 175rpx;
+    display: block;
+}
+.recomW .wkj{
+    width:750rpx;
+    background: #fff;
+}
+.recom{
+    width: 715rpx;
+    margin: 0rpx auto;
+    padding: 20rpx 0;
+    background: #fff;
+}
+.recom .item{
+    width: 350rpx;
+    height: 535rpx;
+    display: block;
+    border:2rpx solid #f1f1f1;
+    overflow: hidden;
+}
+.recom .item:nth-of-type(odd){
+    float:left;
+}
+.recom .item:nth-of-type(even){
+    float:right;
+}
+.recom .item .figure{
+    width: 325rpx;
+    height: 340rpx;
+    margin: 0 auto;
+}
+.recom .item .figure image{
+    width: 325rpx;
+    height: 340rpx;
+    display: block;
+}
+.recom .item .tit{
+    height: 80rpx;
+    line-height: 40rpx;
+    width: 325rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 25rpx;
+    color: #212121;
+}
+.recom .item .pricew{
+    width: 325rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recom .item .pricew .pri{
+    font-size: 30rpx;
+    color: #46be05;
+    line-height: 55rpx;
+}
+.recom .item .pricew .scart{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #46be05;
+}
+.recom .item .pricew .scart image{
+    width: 55rpx;
+    height: 55rpx;
+    display: block;
+}

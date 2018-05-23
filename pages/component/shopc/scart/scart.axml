@@ -1,0 +1,77 @@
+<view class="container">
+  <view class="hascarts"  a:if="{{carts.length>0}}">
+    <view class="storelist" a:for="{{carts}}" a:for-index="parentindex">
+      <view class="storetop">
+        <view class="small fl" onTap="storeselect" data-parentindex="{{parentindex}}">
+          <icon a:if="{{item.parentselect == 1}}" type="success" size="20" color="#46be05"/>
+          <view a:else class="quan"></view>
+        </view>
+        <view class="ico fl">
+          <image src="/images/storeico.png"/>
+        </view>
+        <view class="stit fl">
+          {{item.storetit}}
+        </view>
+        <view class="altr fl">
+          <image src="/images/altr@32.png"/>
+        </view>
+      </view>
+      <!--商品列表-->
+      <view class="goodsw">
+        <view class="goods clearfix" a:for="{{item.list}}" a:for-index="index" a:for-item="list">
+          <view class="small fl" onTap="selectList" data-index="{{index}}" data-parentindex="{{parentindex}}">
+            <icon a:if="{{list.select == 1}}" type="success" size="20" color="#46be05"/>
+            <view a:else class="quan"></view>
+          </view>
+          <view class="figure fl">
+            <image src="{{list.imgsrc}}"/>
+          </view>
+          <view class="dl fr">
+            <view class="dd clearfix">
+              <view class="tit fl">{{list.tit}}</view>
+              <view class="delete fr" onTap="deleteList" data-index="{{index}}" data-parentindex="{{parentindex}}">
+                <icon type="cancel" size="25" color="#d2d2d2"/>
+              </view>
+            </view>
+            <view class="h80"></view>
+            <view class="dt clearfix">
+              <view class="price fl">¥{{list.price}}</view>
+              <view class="num fr clearfix">
+                <view class="minus fl" onTap="minusCount" data-index="{{index}}" data-parentindex="{{parentindex}}">-</view>
+                <input type="number fl" class="fl" value="{{list.num}}"/>
+                <view class="plus fl" class="fl" onTap="addCount" data-index="{{index}}" data-parentindex="{{parentindex}}">+</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--结算-->
+    <view class="h100"></view>
+    <view class="accountsW">
+      <view class="qx fl">
+        <view class="small fl" onTap="selectAll">
+          <icon a:if="{{selectAllStatus == 1}}" type="success" size="20" color="#46be05"/>
+          <view a:else class="quan"></view>
+        </view>
+        全选
+      </view>
+      <navigator url="/pages/component/shopc/settle/settle" class="accountbtn fr">结算</navigator>
+      <view class="fr sum">
+        合计：
+        <text>{{totalPrice}}</text>
+      </view>
+    </view>
+  </view>
+  <!--没有购物车-->
+  <view class="nocart" a:else>
+    <view class="h-110"></view>
+    <view class="figure">
+      <image src="/images/nocarts.png"/>
+    </view>
+    <view class="h-45"></view>
+    <view class="tips">购物车中还没有商品，</view>
+    <view class="h-10"></view>
+    <view class="xgo">赶紧去选购吧！</view>
+  </view>
+</view>

@@ -1,0 +1,262 @@
+@import '/pages/common/common.acss';
+/**有地址**/
+page{
+    background: #eeeeee;
+}
+.h35{
+    height: 35rpx;
+}
+.h20{
+    height: 20rpx;
+}
+.hasaddr{
+    width: 750rpx;
+    height: 150rpx;
+    background: #fff;
+    border-bottom: 1rpx solid #f5f5f5;
+}
+.hasaddr .addrico{
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin: 35rpx 20rpx 0 20rpx;
+}
+.hasaddr .addrico image{
+    width:40rpx;
+    height: 40rpx;
+    display: block;
+}
+.hasaddr .chooseaddr{
+    width: 655rpx;
+    height: 150rpx;
+}
+.hasaddr .chooseaddr .addrw{
+    height: 85rpx;
+    width: 590rpx;
+}
+.hasaddr .chooseaddr .addrw .consignee,.hasaddr .chooseaddr .addrw .profile{
+    height: 45rpx;
+    width: 590rpx;
+    line-height: 45rpx;
+    font-size: 24rpx;
+    color: #4d4d4d;
+}
+.hasaddr .altr{
+    width: 30rpx;
+    height: 45rpx;
+    margin-top: 20rpx;
+}
+.hasaddr .altr image{
+    width: 30rpx;
+    height: 45rpx;
+    display: block;
+}
+.purchaseD{
+    width: 750rpx;
+    background: #fff;
+}
+.shoptop{
+    padding: 0 30rpx;
+    height: 100rpx;
+    border-bottom: 2rpx solid #f1f1f1;
+}
+.shoptop .shopname{
+    width: 420rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #161516;
+    overflow: hidden;
+}
+.shoplx{
+    width: 175rpx;
+    height: 40rpx;
+    margin-top: 35rpx;
+    font-size: 24rpx;
+    line-height: 35rpx;
+    color: #2b2d2b;
+}
+.shoplx .ico{
+    width: 40rpx;
+    height: 35rpx;
+    display: block;
+    margin-right: 10rpx;
+}
+.shoplx .ico image{
+    width: 40rpx;
+    height: 35rpx;
+    display: block;
+}
+.goodsw{
+    width: 750rpx;
+    height: 215rpx;
+    border-bottom: 1rpx solid #f9f9f9;
+}
+.goods{
+    width: 715rpx;
+    height: 150rpx;
+    margin:25rpx auto;
+    overflow: hidden;
+}
+.goods .figure{
+    width: 135rpx;
+    height: 150rpx;
+    display: block;
+}
+.goods .figure image{
+    width: 135rpx;
+    height: 150rpx;
+    display: block;
+}
+.goods .tit{
+    width: 390rpx;
+    height: 150rpx;
+    font-size: 24rpx;
+    line-height: 30rpx;
+    color: #000000;
+    overflow: hidden;
+}
+.goods .dl{
+    width: 170rpx;
+    height: 150rpx;
+}
+.goods .dl .price{
+    line-height: 40rpx;
+    color: #74727d;
+    font-size: 24rpx;
+    text-align: right;
+}
+.goods .dl .num{
+    line-height: 40rpx;
+    color: #74727d;
+    font-size: 24rpx;
+    text-align: right;
+}
+.section{
+    width: 750rpx;
+    height: 110rpx;
+    border-top: 2rpx solid #f0f0f0;
+    padding: 0 15rpx;
+    background: #fff;
+}
+.section .wp{
+    height: 30rpx;
+    line-height: 30rpx;
+    color: #3a3b3a;
+    font-size: 22rpx;
+    margin-top: 20rpx;
+}
+.realpay{
+    width: 750rpx;
+    height: 85rpx;
+    font-size: 24rpx;
+    border-top:2rpx solid #ededed;
+    color: #3b3f3b;
+    font-weight: bold;
+    line-height: 85rpx;
+    padding:0 15rpx;
+    background: #fff;
+}
+.payway{
+    padding:0 15rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 22rpx;
+    color: #474947;
+    background: #fff;
+}
+.ordinfo{
+    padding: 0 15rpx;
+    height: 160rpx;
+    background: #ffffff;
+}
+.ordinfo view{
+    font-size: 22rpx;
+    color: #383a38;
+    line-height: 30rpx;
+    padding-top:15rpx; 
+}
+.total{
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 28rpx;
+    color: #141314;
+    background: #fff;
+    padding-left: 30rpx;
+}
+.total text{
+    line-height: 90rpx;
+}
+.total text.green{
+    color: #46be05;
+}
+.recomW .bigtit{
+    width: 750rpx;
+    height: 90rpx;
+    display: block;
+    text-align: center;
+    line-height: 90rpx;
+    color: #212121;
+    font-size: 28rpx;
+}
+.recom{
+    width: 715rpx;
+    margin: 0rpx auto;
+    padding: 0rpx 0 20rpx 0;
+}
+.recom .item{
+    width: 350rpx;
+    height: 535rpx;
+    display: block;
+    margin-bottom: 20rpx;
+    overflow: hidden;
+    background: #fff;
+}
+.recom .item:nth-of-type(odd){
+    float:left;
+}
+.recom .item:nth-of-type(even){
+    float:right;
+}
+.recom .item .figure{
+    width: 325rpx;
+    height: 340rpx;
+    margin: 0 auto;
+}
+.recom .item .figure image{
+    width: 325rpx;
+    height: 340rpx;
+    display: block;
+}
+.recom .item .tit{
+    height: 80rpx;
+    line-height: 40rpx;
+    width: 325rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 25rpx;
+    color: #212121;
+}
+.recom .item .pricew{
+    width: 325rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recom .item .pricew .pri{
+    font-size: 30rpx;
+    color: #46be05;
+    line-height: 55rpx;
+}
+.recom .item .pricew .scart{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #46be05;
+}
+.recom .item .pricew .scart image{
+    width: 55rpx;
+    height: 55rpx;
+    display: block;
+}

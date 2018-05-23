@@ -1,0 +1,102 @@
+<view class="container">
+  <form onSubmit="" onReset="">
+  <view a:if="{{address}}" class="hasaddr clearfix">
+    <view class="fl addrico">
+      <image src="/images/hasaddrico.png"/>
+    </view>
+    <navigator url="/pages/component/shopc/chooseaddr/chooseaddr" class="fl chooseaddr clearfix">
+      <view class="h35"></view>
+      <view class="addrw fl">
+        <view class="consignee">
+          收货人：{{address.name}} {{address.phone}}
+        </view>
+        <view class="profile">
+          收货地址：{{address.address}}
+        </view>
+      </view>
+      <view class="altr fr">
+        <image src="/images/altr.png"/>
+      </view>
+    </navigator>
+  </view>
+  <view a:else class="noaddr clearfix">
+    <view class="fl addrico">
+      <image src="/images/noaddrico.png"/>
+    </view>
+    <navigator url="/pages/component/shopc/editaddr/editaddr" class="fl addaddr">
+      <view class="fl text">请填写收货地址</view>
+      <view class="fr altr">
+        <image src="/images/altr.png"/>
+      </view>
+    </navigator>
+  </view>
+  <view class="h30"></view>
+  
+
+  <view class="purchaseD">
+    <!--结算商品-->
+    <view class="cleargoods clearfix" a:if="{{true}}">
+      <view class="goods fl">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+          <view class="item scroll-view-item_H" a:for="{{cleargoods}}">
+          <image src="{{item.img}}"/>
+          </view>
+        </scroll-view>
+      </view>
+      <navigator class="toview fr" url="/pages/component/shopc/cleargoods/cleargoods">
+        共{{cleargoods.length}}件
+        <view class="altr fr">
+          <image src="/images/altr.png"></image> 
+        </view>
+      </navigator>
+    </view>
+    <!--view class="shoptop clearfix">
+      <view class="shopname fl">琪琪女鞋</view>
+      <navigator class="shoplx fr clearfix">
+        <view class="ico fl">
+          <image src="/images/lxdjico.png"/>
+        </view>
+        <view class="lx fl">联系商家</view>
+      </navigator>
+    </view-->
+    <!--一件商品-->
+    <!--goods-->
+    <view class="goodsw" a:else>
+      <view class="goods clearfix">
+        <view class="figure fl">
+          <image src="/images/allimg.jpg"/>
+        </view>
+        <view class="tit fl">
+          碧生源牌减肥茶 2.5g/袋*15袋/盒*4盒正式更名为碧生源牌
+        </view>
+        <view class="dl fr">
+          <view class="price">¥158.10</view>
+          <view class="num">x1</view>
+        </view>
+      </view>
+    </view>
+    <!--买家留言-->
+    <view class="section">
+      <textarea placeholder="填选：买家留言（50字以内）" maxlength="50"/>
+    </view>
+    <view class="section clearfix">
+      <view class="fl tit">商品总价</view>
+      <view class="fr price">¥185.10</view>
+    </view>
+    <view class="section clearfix">
+      <view class="fl tit">打折减</view>
+      <view class="fr price green">-¥0.00</view>
+    </view>
+    <view class="section clearfix">
+      <view class="fl tit">邮费</view>
+      <view class="fr price green">+¥0.00</view>
+    </view>
+    <!--底部-->
+    <view class="h100"></view>
+    <view class="footerw">
+      <view class="totalp fl">实付款：¥150.00</view>
+      <navigator class="suborder fr" url="/pages/component/shopc/alipay/alipay">提交订单</navigator>
+    </view>
+  </view>
+  </form>
+</view>

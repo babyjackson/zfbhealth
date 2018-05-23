@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="tabnav clearfix">
+    <view class="dh {{tabArr.cur == 0 ? 'active':''}}" onTap="tabChange" data-index="0">人气</view>
+    <view class="dh {{tabArr.cur == 1 ? 'active':''}}" onTap="tabChange" data-index="1">销量</view>
+    <view class="dh {{tabArr.cur == 2 ? 'active':''}}" onTap="tabChange" data-index="2">价格 ↑</view>
+  </view>
+  <view class="conw">
+    <view class="con-item {{tabArr.cur == 0 ? 'on':''}}">
+      <view class="recomW">
+        <view class="recom clearfix">
+          <navigator class="item" a:for="{{recom}}">
+            <view class="h20"></view>
+            <view class="figure">
+              <image src="{{item.imgsrc}}"/>
+            </view>
+            <view class="h15"></view>
+            <view class="tit">{{item.tit}}</view>
+            <view class="pricew clearfix">
+              <view class="pri fl">￥{{item.price}}</view>
+              <view class="scart fr"><image src="/images/scartico.png"/></view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <view class="con-item {{tabArr.cur == 1 ? 'on':''}}">2</view>
+    <view class="con-item {{tabArr.cur == 2 ? 'on':''}}">3</view>
+  </view>
+</view>

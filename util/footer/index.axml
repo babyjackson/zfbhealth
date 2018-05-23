@@ -1,0 +1,15 @@
+<template name="footer">
+  <view class="tabBar">
+    <block a:for="{{list}}">
+      <view class="item">
+        <navigator url="{{item.pagePath}}">
+          <view class="h20"></view>
+          <view class="ico">
+            <image src="{{item.icon}}"/>
+          </view>
+          <view class="tit {{item.current== 0 ? 'selectedtit' :''}}">{{item.name}}</view>
+        </navigator>
+      </view>
+    </block>
+  </view>
+</template>

@@ -1,0 +1,91 @@
+<view class="container">
+  <view class="bannerW">
+      <image src="/images/banner1.jpg"/>
+    </view>
+    <!--导航-->
+    <view class="navaid">
+        <navigator class="item" a:for="{{navaid}}" url="{{item.url}}">
+            <view class="h45"></view>
+            <view class="figure">
+                <image src="{{item.imgsrc}}"/>
+            </view>
+            <view class="tit">{{item.tit}}</view>
+        </navigator>
+    </view>
+    <!--精品推荐-->
+    <view class="boutiqueW">
+        <view class="alltit">
+            <image src="/images/boutiquetit.png"/>
+        </view>
+        <view class="boutique clearfix">
+            <view class="item fl" a:for="{{boutique}}">
+                <view class="tips">
+                    <view class="ibg">
+                        <image src="/images/tipsboutique.png"/>
+                    </view>
+                    <view class="ts">人气</view>
+                </view>
+                <view class="h35"></view>
+                <view class="figure">
+                    <image src="{{item.imgsrc}}"/>
+                </view>
+                <view class="h20"></view>
+                <view class="tit">{{item.tit}}</view>
+                <view class="price">¥{{item.price}}</view>
+            </view>
+        </view>
+    </view>
+    <!--最新上市-->
+    <view class="latestW">
+        <view class="alltit">
+            <image src="/images/latestnewtit.png"/>
+        </view>
+        <view class="latest clearfix">
+            <view class="bitem fl">
+                <view class="tips">新品上市</view>
+                <view class="h65"></view>
+                <view class="figure">
+                    <image src="/images/allimg.jpg"/>
+                </view>
+            </view>
+            <view class="sitem fr">
+                <view class="skj clearfix">
+                    <view class="tips">天天特惠</view>
+                    <view class="fl tit">瑞典进口ICA麦片50%水果</view>
+                    <view class="fr figure">
+                        <image src="/images/allimg.jpg"/>
+                    </view>
+                </view>
+                <view class="skj clearfix">
+                    <view class="tips">天天特惠</view>
+                    <view class="fl tit">瑞典进口ICA麦片50%水果</view>
+                    <view class="fr figure">
+                        <image src="/images/allimg.jpg"/>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--猜你喜欢-->
+    <view class="recomW">
+        <view class="alltit">
+            <image src="/images/liketit.png"/>
+        </view>
+        <view class="wkj">
+            <view class="recom clearfix">
+                <navigator class="item" a:for="{{recom}}">
+                    <view class="h20"></view>
+                    <view class="figure">
+                        <image src="{{item.imgsrc}}"/>
+                    </view>
+                    <view class="h15"></view>
+                    <view class="tit">{{item.tit}}</view>
+                    <view class="pricew clearfix">
+                    <view class="pri fl">￥{{item.price}}</view>
+                    <view class="scart fr"><image src="/images/scartico.png"/></view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

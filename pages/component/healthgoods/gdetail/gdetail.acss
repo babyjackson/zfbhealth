@@ -1,0 +1,373 @@
+@import '/pages/common/common.acss';
+.h20{
+    height: 20rpx;
+}
+.h35{
+    height: 35rpx;
+}
+.h65{
+    height: 65rpx;
+}
+.h105{
+    height: 105rpx;
+}
+page{
+    background: #f7f7f7;
+}
+.topw{
+    width: 750rpx;
+    background: #fff;
+}
+.bannerw{
+    width: 750rpx;
+    height: 730rpx;
+}
+.bannerw .ban{
+    width: 750rpx;
+    height: 500rpx;
+    display: block;
+}
+.bannerw .img{
+    width: 750rpx;
+    height: 730rpx;
+}
+.bannerw .img image{
+    width: 750rpx;
+    height: 730rpx;
+    display: block;
+}
+.topw .title{
+    width: 675rpx;
+    max-height: 85rpx;
+    margin: 15rpx auto;
+    font-size: 28rpx;
+    color: #040404;
+    line-height: 40rpx;
+    overflow: hidden;
+}
+.topw .wkj{
+    width: 675rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    line-height: 55rpx;
+}
+.topw .wkj .price{
+    font-size: 24rpx;
+    color: #eb0703;
+    line-height: 55rpx;
+}
+.topw .wkj .stock{
+    font-size: 24rpx;
+    color: #bebebe;
+    line-height: 55rpx;
+    margin-left: 25rpx;
+}
+.topw .wkj .sales{
+    font-size: 24rpx;
+    color: #bebebe;
+    line-height: 55rpx;
+    margin-left: 28rpx;
+}
+.storeW{
+    width: 750rpx;
+    height: 345rpx;
+    background: #ffffff;
+}
+.storeW .inform{
+    width: 750rpx;
+    height: 90rpx;
+    overflow: hidden;
+}
+.storeW .inform .logo{
+    width: 90rpx;
+    height: 90rpx;
+    display: block;
+    margin-left: 25rpx;
+}
+.storeW .inform .logo image{
+    width: 90rpx;
+    height: 90rpx;
+    display: block;
+}
+.storeW .inform .dl{
+    width: 340rpx;
+    height: 90rpx;
+    margin-left: 15rpx;
+}
+.storeW .inform .dl .tit{
+    font-size: 28rpx;
+    color: #363636;
+    line-height: 40rpx;
+}
+.storeW .inform .dl .txt{
+    font-size: 21rpx;
+    color: #5b5b5b;
+    line-height: 25rpx;
+    margin-top: 10rpx;
+}
+.storeW .grade{
+    width: 750rpx;
+    height: 155rpx;
+    display: flex;
+}
+.storeW .grade .item{
+    flex: 1;
+    height: 155rpx;
+}
+.storeW .grade .item .text{
+    font-size: 24rpx;
+    text-align: center;
+    color: #bbb7bb;
+    line-height: 45rpx;
+    display: block;
+    width: 100%;
+}
+.storeW .grade .item .figure{
+    width: 66rpx;
+    height: 66rpx;
+    border-radius: 50%;
+    margin:10rpx auto;
+    border:3rpx solid #8dc761;
+}
+.storeW .grade .item .figure .squan{
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 50%;
+    background: #94cb6b;
+    line-height: 50rpx;
+    text-align: center;
+    font-size:24rpx;
+    color: #ffffff;
+    margin: 6rpx 5rpx;
+}
+.detailpart{
+    background: #ffffff;
+}
+.tabnavw{
+    width: 750rpx;
+    height: 80rpx;
+    border-bottom:2rpx solid #efefef;  
+}
+.tabnavw .nav{
+    width: 750rpx;
+    height: 83rpx;
+    display: flex;
+    float: left;
+}
+.tabnavw .nav .item{
+    flex: 1;
+    height: 79rpx;
+    line-height: 80rpx;
+    border-bottom: 4rpx solid rgba(0, 0, 0, 0);
+    font-size: 28rpx;
+    color: #9d9c9c;
+    text-align: center;
+}
+.tabnavw .nav .item.active{
+    border-bottom: 4rpx solid #46be05;
+    color: #46be05;
+}
+.con-item{
+    display: none;
+}
+.con-item.on{
+    display: block;
+}
+.h25{
+    height: 25rpx;
+}
+.imageText{
+    width: 750rpx;
+}
+.imageText .img{
+    width: 750rpx;
+}
+.imageText .img image{
+    width: 100%;
+    display: block;
+}
+.reviews{
+    background: #fff;
+    padding: 0 20rpx;
+}
+.reviews .item{
+    width: 710rpx;
+    border-bottom: 2rpx solid #f0edf0;
+    padding: 40rpx 0;
+}
+.reviews .item .user{
+    height: 50rpx;
+    width: 710rpx;
+    overflow: hidden;
+}
+.reviews .item .user .portrait{
+    width: 50rpx;
+    height: 50rpx;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.reviews .item .user .portrait image{
+    display: block;
+    width: 50rpx;
+    height: 50rpx;
+}
+.reviews .item .user .name{
+    margin-left: 10rpx;
+    color: #aaa7aa;
+    font-size: 20rpx;
+    line-height: 20rpx;
+    margin-top: 5rpx;
+}
+.reviews .item .revcon{
+    font-size: 25rpx;
+    color: #0c0b0c;
+    line-height: 35rpx;
+}
+.reviews .item .pic{
+    width: 710rpx;
+    height: 100rpx;
+    overflow: hidden;
+}
+.reviews .item .pic image{
+    width: 100rpx;
+    height: 100rpx;
+    display: block;
+    margin-right: 10rpx;
+    margin-top: 10rpx;
+}
+.reviews .item .time{
+    height: 50rpx;
+    line-height: 50rpx;
+    font-size: 22rpx;
+    color: #aaa6aa;
+}
+.recomW{
+    background: #ffffff;
+}
+.recomW .bigtit{
+    width: 750rpx;
+    height: 75rpx;
+    display: block;
+    background: #eeeeee;
+}
+.recomW .bigtit image{
+    width: 400rpx;
+    height: 75rpx;
+    display: block;
+    margin: 0 auto;
+}
+.recom{
+    width: 715rpx;
+    margin: 0rpx auto;
+    padding: 20rpx 0;
+}
+.recom .item{
+    width: 350rpx;
+    height: 535rpx;
+    display: block;
+    border:2rpx solid #f1f1f1;
+    overflow: hidden;
+}
+.recom .item:nth-of-type(odd){
+    float:left;
+}
+.recom .item:nth-of-type(even){
+    float:right;
+}
+.recom .item .figure{
+    width: 325rpx;
+    height: 340rpx;
+    margin: 0 auto;
+}
+.recom .item .figure image{
+    width: 325rpx;
+    height: 340rpx;
+    display: block;
+}
+.recom .item .tit{
+    height: 80rpx;
+    line-height: 40rpx;
+    width: 325rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 25rpx;
+    color: #212121;
+}
+.recom .item .pricew{
+    width: 325rpx;
+    height: 55rpx;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.recom .item .pricew .pri{
+    font-size: 30rpx;
+    color: #46be05;
+    line-height: 55rpx;
+}
+.recom .item .pricew .scart{
+    width: 55rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #46be05;
+}
+.recom .item .pricew .scart image{
+    width: 55rpx;
+    height: 55rpx;
+    display: block;
+}
+.footerW{
+    height: 105rpx;
+    width: 750rpx;
+    bottom: 0;
+    position: fixed;
+    background: #fff;
+}
+.foot{
+    height: 105rpx;
+    width: 750rpx;
+    overflow: hidden;
+    border-top: 1rpx solid #e6e6e6;
+}
+.foot .home,.foot .scart{
+    width: 105rpx;
+    height: 105rpx;
+}
+.foot .home{
+    border-right: 2rpx solid #e7e7e7;
+}
+.foot .img{
+    width: 45rpx;
+    height: 55rpx;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10rpx;
+}
+.foot .img image{
+    width: 45rpx;
+    height: 45rpx;
+    display: block;
+}
+.foot .text{
+    font-size: 22rpx;
+    color: #3c3d3c;
+    line-height: 25rpx;
+    text-align: center;
+    margin-top: 5rpx;
+}
+.foot .joinscart,.foot .buynow{
+    width: 270rpx;
+    height: 105rpx;
+    line-height: 105rpx;
+    text-align: center;
+    font-size: 35rpx;
+}
+.foot .joinscart{
+    background: #88d741;
+    color: #e6e6e6;
+}
+.foot .buynow{
+    background: #46be05;
+    color: #fff;
+}

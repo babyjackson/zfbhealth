@@ -1,0 +1,112 @@
+<view class="container">
+  <view class="topw">
+    <!--banner-->
+    <view class="bannerw">
+      <swiper class="ban" indicator-dots="true" indicator-color="#d2d2d2" indicator-active-color="#46be05">
+        <block a:for="{{banner}}">
+          <swiper-item>
+            <view class="img">
+              <image src="{{item.imgsrc}}"/>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!--标题-->
+    <view class="title">San Peter/圣彼得 左旋肉碱咖啡粉 10g</view>
+    <view class="wkj clearfix">
+      <view class="price fl">¥258.00</view>
+      <view class="stock fl">库存：43087</view>
+      <view class="sales fl">销量：2</view>
+    </view>
+  </view>
+  <view class="h20"></view>
+  <!--店铺inform-->
+  <view class="storeW">
+    <view class="h35"></view>
+    <view class="inform">
+      <view class="logo fl">
+        <image src="/images/allimg.jpg"/>
+      </view>
+      <view class="dl fl">
+        <view class="tit">养生美容美体平台</view>
+        <view class="txt">养生美容美体平台</view>
+      </view>
+    </view>
+    <view class="h65"></view>
+    <view class="grade">
+      <view class="item" a:for="{{grade}}">
+        <view class="text">{{item.tit}}</view>
+        <view class="figure">
+          <view class="squan fl">{{item.num}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="h20"></view>
+  <view class="detailpart">
+    <view class="tabnavw">
+      <view class="nav">
+        <view class="item {{tabArr.cur==0 ?'active':''}}" data-index="0" onTap="onTagChange">图文详情</view>
+        <view class="item {{tabArr.cur==1 ?'active':''}}" data-index="1" onTap="onTagChange">商品评价</view>
+        <view class="item {{tabArr.cur==2 ?'active':''}}" data-index="2" onTap="onTagChange">相关推荐</view>
+      </view>
+    </view>
+    <view class="con-item {{tabArr.cur==0 ? 'on':''}}">
+      <!--图文详情-->
+      <view class="h25"></view>
+      <view class="imageText">
+        <view class="img" a:for="{{imageText}}"><image src="{{item}}" mode="widthFix"/></view>
+      </view>
+    </view>
+    <view class="con-item {{tabArr.cur==1 ? 'on':''}}">
+      <!--商品评价-->
+      <view class="reviews">
+        <view class="item" a:for="{{reviews}}">
+          <view class="user clearfix">
+            <view class="portrait fl"><image src="{{item.portrait}}"/></view>
+            <view class="name fl">{{item.name}}</view>
+          </view>
+          <view class="revcon">{{item.plcon}}</view>
+          <view class="pic clearfix" a:if="{{item.pic}}">
+            <image src="{{img}}" class="fl" a:for="{{item.pic}}" a:for-item="img"/>
+          </view>
+          <view class="time">{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="con-item {{tabArr.cur==2 ? 'on':''}}">
+      <!--相关推荐-->
+      <view class="recom clearfix">
+        <navigator class="item" a:for="{{recom}}">
+          <view class="h20"></view>
+          <view class="figure">
+            <image src="{{item.imgsrc}}"/>
+          </view>
+          <view class="h15"></view>
+          <view class="tit">{{item.tit}}</view>
+          <view class="pricew clearfix">
+            <view class="pri fl">￥{{item.price}}</view>
+            <view class="scart fr"><image src="/images/scartico.png"/></view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!--底部-->  
+  <view class="h105"></view>
+  <view class="footerW">
+    <view class="foot clearfix">
+      <view class="home fl">
+        <view class="img"><image src="/images/schome.png"/></view>
+        <view class="text">首页</view>
+      </view>
+      <view class="scart fl">
+        <view class="img"><image src="/images/gwcico.png"/></view>
+        <view class="text">购物车</view>
+      </view>
+      <view class="joinscart fl">加入购物车</view>
+      <navigator class="buynow fl">立即购买</navigator>
+    </view>
+  </view>
+</view>

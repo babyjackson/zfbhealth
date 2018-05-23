@@ -1,0 +1,271 @@
+@import '/pages/common/common.acss';
+page{
+    background: #fff;
+}
+.h30{
+    height: 30rpx;
+    background: #efefef;
+}
+.h35{
+    height: 35rpx;
+}
+.h100{
+    height: 100rpx;
+}
+.noaddr{
+    width: 750rpx;
+    height: 105rpx;
+    background: #fff;
+    overflow: hidden;
+    border-bottom: 1rpx solid #f9f9f9;
+}
+.noaddr .addrico{
+    width: 35rpx;
+    height: 45rpx;
+    display: block;
+    margin: 33rpx 20rpx 30rpx 30rpx;
+}
+.noaddr .addrico image{
+    width: 35rpx;
+    height: 45rpx;
+    display: block;
+}
+.noaddr .addaddr{
+    width: 645rpx;
+    height: 100rpx;
+    display: block;
+}
+.noaddr .addaddr .text{
+    width: 380rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 24rpx;
+    color: #040404;
+}
+.noaddr .addaddr .altr{
+    width: 30rpx;
+    height: 45rpx;
+    margin-top: 33rpx;
+}
+.noaddr .addaddr .altr image{
+    width: 30rpx;
+    height: 45rpx;
+    display: block;
+}
+/**有地址**/
+.hasaddr{
+    width: 750rpx;
+    height: 150rpx;
+    background: #fff;
+    border-bottom: 1rpx solid #f5f5f5;
+}
+.hasaddr .addrico{
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin: 35rpx 20rpx 0 20rpx;
+}
+.hasaddr .addrico image{
+    width:40rpx;
+    height: 40rpx;
+    display: block;
+}
+.hasaddr .chooseaddr{
+    width: 655rpx;
+    height: 150rpx;
+}
+.hasaddr .chooseaddr .addrw{
+    height: 85rpx;
+    width: 590rpx;
+}
+.hasaddr .chooseaddr .addrw .consignee,.hasaddr .chooseaddr .addrw .profile{
+    height: 45rpx;
+    width: 590rpx;
+    line-height: 45rpx;
+    font-size: 24rpx;
+    color: #4d4d4d;
+}
+.hasaddr .altr{
+    width: 30rpx;
+    height: 45rpx;
+    margin-top: 20rpx;
+}
+.hasaddr .altr image{
+    width: 30rpx;
+    height: 45rpx;
+    display: block;
+}
+.purchaseD{
+    width: 750rpx;
+    background: #fff;
+}
+.shoptop{
+    padding: 0 30rpx;
+    height: 100rpx;
+    border-bottom: 2rpx solid #f1f1f1;
+}
+.shoptop .shopname{
+    width: 420rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #161516;
+    overflow: hidden;
+}
+.shoplx{
+    width: 175rpx;
+    height: 40rpx;
+    margin-top: 35rpx;
+    font-size: 24rpx;
+    line-height: 35rpx;
+    color: #2b2d2b;
+}
+.shoplx .ico{
+    width: 40rpx;
+    height: 35rpx;
+    display: block;
+    margin-right: 10rpx;
+}
+.shoplx .ico image{
+    width: 40rpx;
+    height: 35rpx;
+    display: block;
+}
+.goodsw{
+    width: 750rpx;
+    height: 215rpx;
+    border-bottom: 1rpx solid #f9f9f9;
+}
+.goods{
+    width: 715rpx;
+    height: 150rpx;
+    margin:25rpx auto;
+    overflow: hidden;
+}
+.goods .figure{
+    width: 135rpx;
+    height: 150rpx;
+    display: block;
+}
+.goods .figure image{
+    width: 135rpx;
+    height: 150rpx;
+    display: block;
+}
+.goods .tit{
+    width: 390rpx;
+    height: 150rpx;
+    font-size: 24rpx;
+    line-height: 30rpx;
+    color: #000000;
+    overflow: hidden;
+}
+.goods .dl{
+    width: 170rpx;
+    height: 150rpx;
+}
+.goods .dl .price{
+    line-height: 40rpx;
+    color: #74727d;
+    font-size: 24rpx;
+    text-align: right;
+}
+.goods .dl .num{
+    line-height: 40rpx;
+    color: #74727d;
+    font-size: 24rpx;
+    text-align: right;
+}
+.section{
+    width: 750rpx;
+    height: 100rpx;
+    border-bottom: 2rpx solid #f8f8f8;
+}
+.section textarea{
+    width: 715rpx;
+    height: 80rpx;
+    margin: 10rpx auto;
+    font-size: 24rpx;
+}
+.section .tit{
+    line-height: 100rpx;
+    margin-left: 17rpx;
+    font-size: 24rpx;
+    color: #111424;
+}
+.section .price{
+    line-height: 100rpx;
+    margin-right: 17rpx;
+    font-size: 24rpx;
+    color: #111424;
+}
+.section .green{
+    color: #46be05;
+}
+.footerw{
+    width:750rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+}
+.footerw .totalp{
+    width: 475rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: right;
+    font-size: 28rpx;
+    color: #46be05;
+}
+.footerw .suborder{
+    width: 240rpx;
+    height: 100rpx;
+    text-align: center;
+    background: #46be05;
+    font-size: 28rpx;
+    color: #ffffff;
+}
+.cleargoods .goods{
+    width: 500rpx;
+    height: 120rpx;
+}
+.cleargoods .goods .scroll-view_H{
+    white-space: nowrap;
+    display:flex;
+}
+.scroll-view-item_H{
+  flex-shrink:0;
+  flex-grow:0;
+}
+.cleargoods .goods .item{
+    width: 120rpx;
+    height: 120rpx;
+    margin-left: 20rpx;
+    overflow: hidden;
+}
+.cleargoods .goods .item image{
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+}
+.cleargoods .toview{
+    font-size: 24rpx;
+    color: #2b2b2b;
+    text-align: center;
+    line-height: 120rpx;
+    width: 150rpx;
+    margin: 25rpx 15rpx;
+}
+.cleargoods .toview .altr{
+    width: 30rpx;
+    height: 45rpx;
+    overflow: hidden;
+    margin: 35rpx 0;
+}
+.cleargoods .toview .altr image{
+    display: block;
+    width: 30rpx;
+    height: 45rpx;
+   
+}

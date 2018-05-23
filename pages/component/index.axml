@@ -1,0 +1,181 @@
+<!--共同模块-->
+<template name="pubtit">
+  <view class="displayW">
+    <view class="imgbg">
+      <image src="{{imgbg}}"/>
+    </view>
+    <view class="display">
+      <view class="h60"></view>
+      <view class="ico"><image src="{{ico}}"/></view>
+      <view class="h25"></view>
+      <view class="tit">{{tit}}</view>
+      <view class="h25"></view>
+      <view class="tips">
+        <navigator a:for="{{tips}}" url="{{item.url}}" class="ti">{{item.ti}}</navigator>
+      </view>
+    </view>
+  </view>
+</template>
+<view class="container">
+  <!--bannerw-->
+  <view class="bannerI">
+    <swiper indicator-dots="true" indicator-color="#d2d2d2" indicator-active-color="#46be05" circular="true" class="ban">
+      <block a:for="{{banner}}">
+        <swiper-item>
+          <navigator url="{{item.navurl}}" class="img">
+            <image src="{{item.imgsrc}}"/>
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!--input-->
+    <view class="inputW">
+      <view class="imgbg"><image src="/images/bannerbg.png"/></view>
+      <navigator class="input clearfix" url="/pages/component/search/search">
+        <input type="text" class="fl"/>
+        <button type="default" class="fr"> <icon type="search" size="25" color="#46be05" /> </button>
+      </navigator>
+    </view>
+  </view>
+  <!--导航modal-->
+  <view class="navlist">
+    <navigator class="li" a:for="{{navlist}}" url="{{item.url}}">
+      <view class="figure">
+        <image src="{{item.src}}"/>
+      </view>
+      <view class="text">{{item.tit}}</view>
+    </navigator>
+  </view>
+  <!--每日购-->
+  <view class="everyDayBuy">
+    <view class="bigtit">
+      <image src="/images/everydaybuytit.png" />
+    </view>
+    <view class="dayDayBuy clearfix">
+      <view class="item fl" a:for="{{everydayBuy}}" a:for-item="item">
+        <view class="h15"></view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="tips">{{item.tips}}</view>
+        <navigator class="figure clearfix" url="{{item.url}}">
+            <image a:for="{{item.img}}" a:for-item="img" src="{{img}}" class="fl"/>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="h10"></view>
+  <!--今日推荐-->
+  <view class="todayRecomW">
+    <view class="h25"></view>
+    <view class="todayRecom">
+      <view class="bigtit"># 今日推荐 #</view>
+      <view class="recomW clearfix">
+        <navigator class="item fl" a:for="{{todayRecom}}" url="{{item.url}}">
+          <view class="figure"><image src="{{item.src}}"/></view>
+          <view class="tit">{{item.tit}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!--资讯-->
+  <view class="informW">
+    <template is="pubtit" data="{{...informtit}}"/>
+    <view class="inform">
+      <navigator class="item clearfix" a:for="{{inform}}" url="{{item.url}}">
+        <view class="h15"></view>
+        <view class="dl fl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="h65"></view>
+          <view class="kj clearfix">
+            <view class="ys fl">{{item.ys}}</view>
+            <view class="zan fl clearfix">
+              <image src="/images/lovexin.png" class="fl"/>
+              <text>{{item.zan}}</text>
+            </view>
+            <view class="date fl">{{item.date}}</view>
+          </view>
+        </view>
+        <view class="figure fr">
+          <image src="{{item.imgsrc}}"/>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <!--品牌-->
+  <view class="brandW">
+    <template is="pubtit" data="{{...brandtit}}"/>
+    <view class="brandc">
+      <view class="brand">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+        <view class="item scroll-view-item_H" a:for="{{brand}}">
+          <navigator url="{{item.url}}">
+           <view class="figure">
+             <image src="{{item.imgsrc}}"/>
+           </view>
+           <view class="dl">
+             <view class="tit">{{item.tit}}</view>
+             <view class="txt"><text>{{item.txt}}</text></view>
+             <view class="h30"></view>
+             <view class="kj clearfix">
+              <view class="zan fl clearfix">
+                <image src="/images/lovexin.png" class="fl"/>
+                <text>{{item.zan}}</text>
+              </view>
+              <view class="date fl">{{item.date}}</view>
+             </view>
+           </view>
+         </navigator>
+        </view>
+         
+       </scroll-view>
+      </view>
+    </view>
+  </view>
+  <!--养生堂--> 
+  <view class="healthW">
+    <template is="pubtit" data="{{...healthtit}}"/>
+    <view class="health">
+      <navigator class="item" a:for="{{health}}">
+        <view class="h25"></view>
+        <view class="figure">
+          <image src="{{item.imgsrc}}"/>
+        </view>
+        <view class="dl">
+          <view class="h15"></view>
+          <view class="tit">{{item.tit}}</view>
+          <view class="txt">{{item.txt}}</view>
+          <view class="h20"></view>
+          <view class="kj clearfix">
+            <view class="ys fl">{{item.tips}}</view>
+            <view class="zan fl clearfix">
+              <image src="/images/lovexin.png" class="fl"/>
+              <text>{{item.zan}}</text>
+            </view>
+            <view class="date fl">{{item.date}}</view>
+          </view>
+        </view>
+      </navigator>
+      <view class="h40"></view>
+    </view>
+  </view>
+  <!--为你推荐-->
+  <view class="recomW">
+    <view class="bigtit">
+      <image src="/images/recomtit.png"/>
+    </view>
+    <view class="recom clearfix">
+      <navigator class="item" a:for="{{recom}}">
+        <view class="h20"></view>
+        <view class="figure">
+          <image src="{{item.imgsrc}}"/>
+        </view>
+        <view class="h15"></view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="pricew clearfix">
+          <view class="pri fl">￥{{item.price}}</view>
+          <view class="scart fr"><image src="/images/scartico.png"/></view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+

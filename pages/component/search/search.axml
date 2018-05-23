@@ -1,0 +1,31 @@
+<view class="container">
+  <form onSubmit="" onReset="">
+    <view class="searchW">
+      <view class="search clearfix">
+        <input type="text" placeholder="" class="inp fl"/>
+        <button type="default" onTap="redirect" class="btn fr">
+          <icon type="search" size="20" color="#46be05" /> 
+        </button>
+      </view>
+    </view>
+    <!--历史搜索-->
+  <view class="pastsearch">
+    <view class="ptopw clearfix">
+      <view class="tit fl">历史搜索</view>
+      <view class="clear fr">清除</view>
+    </view>
+    <view class="record clearfix">
+      <view class="item fl" a:for="{{pastsearch}}">{{item.value}}</view>
+    </view>
+  </view>
+  <!--热门搜索-->
+  <view class="hotsearch">
+    <view class="ptopw clearfix">
+      <view class="tit fl">热门搜索</view>
+    </view>
+    <view class="record clearfix">
+      <view class="item fl" a:for="{{pastsearch}}">{{item.value}}</view>
+    </view>
+  </view>
+  </form>
+</view>

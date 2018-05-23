@@ -1,0 +1,121 @@
+@import '/pages/common/common.acss';
+page{
+    background: #eeeeee;
+}
+.container{
+    width: 750rpx;
+}
+.h75{
+    height: 75rpx;
+}
+.h25{
+    height: 25rpx;
+}
+.h10{
+    height: 10rpx;
+}
+.bannerW{
+    width: 715rpx;
+    height: 350rpx;
+    margin: 15rpx auto;
+    position: relative;
+}
+.bannerW .img{
+    width: 715rpx;
+    height: 350rpx;
+}
+.bannerW .img image{
+    display: block;
+    width: 715rpx;
+    height: 350rpx;
+}
+.banner{
+    width: 715rpx;
+    height: 350rpx;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+}
+.banner .banico{
+    width: 130rpx;
+    height: 130rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.banner .banico image{
+    width: 130rpx;
+    height: 130rpx;
+    display: block;
+}
+.banner .czw{
+    height:35rpx;
+    line-height: 35rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #ffffff;
+    overflow: hidden;
+}
+.banner .yw{
+    font-size: 28rpx;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35rpx;
+    color: #fff;
+    height: 35rpx;
+    overflow: hidden;
+}
+.brandW{
+    width: 750rpx;
+    background: #ffffff;
+}
+.brand{
+    width: 715rpx;
+    margin: 0 auto;
+    padding-top: 15rpx;
+}
+.brand .item{
+    width: 345rpx;
+    height: 360rpx;
+    display: block;
+    border:1rpx solid #e5e5e5;
+    margin-bottom: 15rpx;
+    overflow: hidden;
+}
+.brand .item:nth-of-type(odd){
+    float: left;
+}
+.brand .item:nth-of-type(even){
+    float: right;
+}
+.brand .item .figure{
+    width: 345rpx;
+    height: 250rpx;
+    display: block;
+    overflow: hidden;
+}
+.brand .item .figure image{
+    display: block;
+    width: 345rpx;
+    height: 250rpx;
+}
+.brand .item .dl{
+    width: 345rpx;
+    height: 110rpx;
+    display: block;
+}
+.brand .item .dl .tit{
+    height: 65rpx;
+    line-height: 65rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #4e4e4e;
+}
+.brand .item .dl .txt{
+    font-size: 21rpx;
+    color: #a7a7a7;
+    width: 310rpx;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 25rpx;
+}

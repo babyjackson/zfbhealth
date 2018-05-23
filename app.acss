@@ -1,0 +1,17 @@
+page {
+  flex: 1;
+  display: flex;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  clear:both;
+  display: block;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}

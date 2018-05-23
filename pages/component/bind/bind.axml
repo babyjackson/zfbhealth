@@ -1,0 +1,29 @@
+<view class="container">
+  <form onSubmit="formSubmit" onReset="">
+    <view class="section clearfix">
+      <view class="label fl">真实姓名</view>
+      <view class="input fl">
+        <input maxlength="20" name="name" placeholder="请输入您的真实姓名" name="consignee"/>
+      </view>
+    </view>
+    <view class="xian2"></view>
+    <view class="section clearfix">
+      <view class="label fl">手机号</view>
+      <view class="input fl">
+        <input type="number" maxlength="11" name="tel" onBlur="telvalue" placeholder="请输入手机号" name="phone"/>
+      </view>
+      <button class="sendmsg fl" onTap="getVerificationCode" disabled="{{disabled}}" >{{time}}</button>
+    </view>
+    <view class="xian2"></view>
+    <view class="section clearfix">
+      <view class="label fl">验证码</view>
+      <view class="input fl">
+        <input type="number" maxlength="6" name="code" placeholder="请输入短信验证码" name="phone"/>
+      </view>
+    </view>
+    <view class="h-45"></view>
+    <view class="submit">
+      <button formType="submit">提交绑定</button>
+    </view>
+  </form>
+</view>

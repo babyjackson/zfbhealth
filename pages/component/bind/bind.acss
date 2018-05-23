@@ -1,0 +1,76 @@
+page{
+    background: #ffffff;
+}
+.h135{
+    height: 135rpx;
+}
+.xian2{
+ height: 2rpx;
+ background:#f8f8f8;
+}
+.h20{
+    height: 20rpx;
+    background: #f7f7f7;
+}
+.h-45{
+    height: 45rpx;
+}
+.section{
+    width: 750rpx;
+    height: 90rpx;
+    position: relative;
+}
+.section .label{
+    width: 155rpx;
+    height: 90rpx;
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    line-height: 90rpx;
+    color: #424142;
+}
+.section .input{
+    width: 350rpx;
+    height: 90rpx;
+    display: block;
+    overflow: hidden;
+}
+.section .input input{
+    background: rgba(0, 0, 0, 0);
+    display: block;
+    width: 490rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border: 0;
+    overflow: 0;
+    margin:0;
+    padding: 0;
+    font-size: 28rpx;
+    color: #696769;
+    font-family:"Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+}
+.section .sendmsg{
+  position: absolute;
+  right:20rpx;
+  padding: 0rpx 20rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  background-color:#ffffff;
+  color: #bbbbbb;
+  text-align: center;
+  font-size: 30rpx;
+  top:15rpx;
+}
+.submit{
+    width: 715rpx;
+    height: 100rpx;
+    margin: 0 auto;
+}
+.submit button{
+    width: 715rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+    background: #46be05;
+    color: #fff;
+    font-size: 35rpx;
+    letter-spacing: 10rpx;
+}

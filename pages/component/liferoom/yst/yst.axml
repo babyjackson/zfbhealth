@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="tabnav">
+    <view class="dh {{tabArr.cur == 0 ? 'active':''}}" onTap="tabChange" data-index="0">四季养生</view>
+    <view class="dh {{tabArr.cur == 1 ? 'active':''}}" onTap="tabChange" data-index="1">人群养生</view>
+    <view class="dh {{tabArr.cur == 2 ? 'active':''}}" onTap="tabChange" data-index="2">饮食养生</view>
+  </view>
+  <view class="conw">
+    <view class="con-item {{tabArr.cur == 0 ? 'on':''}}">
+      <view class="health">
+        <navigator class="item" a:for="{{health}}">
+          <view class="h25"></view>
+          <view class="figure">
+            <image src="{{item.imgsrc}}"/>
+          </view>
+          <view class="dl">
+            <view class="h15"></view>
+            <view class="tit">{{item.tit}}</view>
+            <view class="txt">{{item.txt}}</view>
+            <view class="h20"></view>
+            <view class="kj clearfix">
+              <view class="ys fl">{{item.tips}}</view>
+              <view class="zan fl clearfix">
+                <image src="/images/lovexin.png" class="fl"/>
+                <text>{{item.zan}}</text>
+              </view>
+              <view class="date fl">{{item.date}}</view>
+            </view>
+          </view>
+        </navigator>
+        
+      </view>
+    </view>
+    <view class="con-item {{tabArr.cur == 1 ? 'on':''}}">2</view>
+    <view class="con-item {{tabArr.cur == 2 ? 'on':''}}">3</view>
+  </view>
+</view>

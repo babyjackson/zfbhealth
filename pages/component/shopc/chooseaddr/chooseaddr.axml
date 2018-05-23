@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="hasaddr" a:if="{{address}}">
+    <view class="item" a:for="{{address}}">
+      <view class="addr">{{item.addr}}</view>
+      <view class="linkman">{{item.name}} {{item.tel}}</view>
+    </view>
+    <!--添加地址-->
+    <view class="hasaddbtn">
+      <view class="btn">
+        <view class="ico fl">
+          <image src="/images/addaddrico.png"/>
+        </view>
+        添加收货地址
+      </view>
+   </view>
+  </view>
+  <view class="noaddr" a:else>
+    <view class="h-90"></view>
+    <view class="figure"><image src="/images/noaddrtips.png"/></view>
+    <view class="h-50"></view>
+    <view class="tips">您还没有地址哦，赶紧添加一个吧~</view>
+    <view class="h-40"></view>
+    <navigator url="" class="addbtn">添加收货地址</navigator>
+  </view>
+</view>

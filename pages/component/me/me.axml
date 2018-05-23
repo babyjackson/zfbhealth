@@ -1,0 +1,78 @@
+<view class="container">
+  <!--banner-->
+  <view class="bannerw">
+    <view class="imgbg">
+      <image src="/images/mebanbg.jpg"/>
+    </view>
+    <view class="ban clearfix">
+      <view class="h95"></view>
+      <view class="portrait fl">
+        <image src="/images/portrait.jpg"/>
+      </view>
+      <view class="username fl">君山第一</view>
+    </view>
+  </view>
+  <!--我的订单-->
+  <navigator class="com_sty clearfix" url="/pages/component/myorder/order/order?id=0">
+    <view class="cap fl">我的订单</view>
+    <view class="altr fr">
+      <text class="fl">查看全部订单</text>
+      <image src="/images/altr.png" class="fr"/>
+    </view>
+  </navigator>
+  <!--待付款-->
+  <view class="ordersw">
+    <navigator class="item" url="/pages/component/myorder/order/order?id=1">
+      <view class="h35"></view>
+      <view class="figure">
+        <image src="/images/dfk.jpg"/>
+      </view>
+      <view class="tit">待付款</view>
+    </navigator>
+    <navigator class="item" url="/pages/component/myorder/order/order?id=2">
+      <view class="h35"></view>
+      <view class="figure">
+        <image src="/images/dfh.jpg"/>
+      </view>
+      <view class="tit">待发货</view>
+    </navigator>
+    <navigator class="item" url="/pages/component/myorder/order/order?id=3">
+      <view class="h35"></view>
+      <view class="figure">
+        <image src="/images/dsh.jpg"/>
+      </view>
+      <view class="tit">待收货</view>
+    </navigator>
+    <navigator class="item" url="/pages/component/myorder/order/order?id=4">
+      <view class="h35"></view>
+      <view class="figure">
+        <image src="/images/dpj.jpg"/>
+      </view>
+      <view class="tit">待评价</view>
+    </navigator>
+  </view>
+  <navigator class="com_sty clearfix" url="/pages/component/shopc/scart/scart">
+    <view class="cap fl">购物车</view>
+    <view class="altr fr">
+      <image src="/images/altr.png" class="fr"/>
+    </view>
+  </navigator>
+   <navigator class="com_sty clearfix" url="/pages/component/setaddr/setaddr">
+    <view class="cap fl">地址管理</view>
+    <view class="altr fr">
+      <image src="/images/altr.png" class="fr"/>
+    </view>
+   </navigator>
+  <navigator class="com_sty clearfix" url="/pages/component/bind/bind">
+    <view class="cap fl">绑定手机</view>
+    <view class="altr fr">
+      <image src="/images/altr.png" class="fr"/>
+    </view>
+  </navigator>
+  <navigator class="com_sty clearfix" url="/pages/component/about/about">
+    <view class="cap fl">关于我们</view>
+    <view class="altr fr">
+      <image src="/images/altr.png" class="fr"/>
+    </view>
+  </navigator>
+</view>

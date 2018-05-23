@@ -1,0 +1,183 @@
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.clearfix::after{
+    clear:both;
+    display: block;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+.page{
+    background: #eeeeee;
+}
+.h-90{
+    height: 90rpx;
+}
+.h-50{
+    height: 50rpx;
+}
+.h-40{
+    height: 40rpx;
+}
+.setaddrw{
+    width: 750rpx;
+}
+.setaddrw .item{
+    width: 750rpx;
+    height: 230rpx;
+    background: #ffffff;
+    margin-bottom: 20rpx;
+}
+.setaddrw .item .addrt{
+    padding: 0 20rpx;
+    border-bottom: 1rpx solid #eeeeee;
+    height: 140rpx;
+}
+.setaddrw .item .addrt .addr{
+    height: 85rpx;
+    line-height: 85rpx;
+    font-size: 28rpx;
+    color: #2b2b2b;
+}
+.setaddrw .item .addrt .linkman{
+    font-size: 24rpx;
+    color: #5e5e5e;
+    line-height: 30rpx;
+}
+.setaddrw .item .addrt .linkman text{
+    line-height: 30rpx;
+}
+.setaddrw .item .addrt .linkman text:nth-of-type(1){
+    margin-right: 30rpx;
+}
+.setaddrw .item .set{
+    height: 80rpx;
+}
+.setaddrw .item .default{
+    margin:25rpx 0 25rpx 20rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    font-size: 24rpx;
+    color: #2b2b2b;
+}
+.setaddrw .item .delete{
+    height: 35rpx;
+    margin: 25rpx 15rpx 25rpx 0;
+    font-size: 24rpx;
+    color: #565656;
+    line-height: 35rpx;
+}
+.setaddrw .item .delete .ico{
+    width: 35rpx;
+    height: 35rpx;
+    display: block;
+    margin-right: 10rpx;
+}
+.setaddrw .item .delete .ico image{
+    display: block;
+    width: 35rpx;
+    height: 35rpx;
+}
+.setaddrw .item .editor{
+    height: 35rpx;
+    margin: 25rpx 30rpx 25rpx 0;
+    font-size: 24rpx;
+    color: #565656;
+    line-height: 35rpx;
+}
+.setaddrw .item .editor .ico{
+    width: 35rpx;
+    height: 35rpx;
+    display: block;
+    margin-right: 10rpx;
+}
+.setaddrw .item .editor .ico image{
+    display: block;
+    width: 35rpx;
+    height: 35rpx;
+}
+.setaddrw .item .default .mico{
+    width: 35rpx;
+    height: 35rpx;
+    margin-right: 10rpx;
+}
+.setaddrw .item .default .mico image{
+    display: block;
+    width: 35rpx;
+    height: 35rpx;
+}
+.setaddrw .item .default .ico{
+    width: 30rpx;
+    height: 30rpx;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10rpx;
+    border:1rpx solid #a1a1a1;
+}
+/*** hasaddbtn ****/
+.hasadd{
+    width: 750rpx;
+    height: 80rpx;
+    background: #fff;
+    border-top:2rpx solid #e7e7e7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.hasadd .btn{
+    width: 260rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 24rpx;
+    color: #0a0a08;
+    line-height: 80rpx;
+    text-indent: 10rpx;
+}
+.hasadd .btn .ico{
+    width: 40rpx;
+    height: 40rpx;
+    display: block;
+    margin: 20rpx 0;
+}
+.hasadd .btn .ico image{
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+}
+/*** 没有收货地址 ****/
+.noaddr{
+    width: 750rpx;
+}
+.noaddr .figure{
+    width: 215rpx;
+    height: 215rpx;
+    display: block;
+    margin: 0 auto;
+}
+.noaddr .figure image{
+    display: block;
+    width: 215rpx;
+    height: 215rpx;
+}
+.noaddr .tips{
+    font-size: 24rpx;
+    color: #7f7d7f;
+    text-align: center;
+    line-height: 30rpx;
+}
+.noaddr .addbtn{
+    width: 675rpx;
+    height: 90rpx;
+    border-radius: 10rpx;
+    background: #39bb0b;
+    font-size: 36rpx;
+    color: #ffffff;
+    line-height: 90rpx;
+    margin: 0 auto;
+    text-align: center;
+}

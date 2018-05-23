@@ -1,0 +1,55 @@
+Page({
+  data: {
+    brand:[
+      {
+        url:"/pages/component/brand/brandlist/brandlist",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      },
+      {
+        url:"/pages/component/brand/brandlist/brandlist",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      },
+      {
+        url:"",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      },
+      {
+        url:"",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      },
+      {
+        url:"",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      },
+      {
+        url:"",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      },
+      {
+        url:"",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      },
+      {
+        url:"",
+        imgsrc:"/images/allimg.jpg",
+        tit:"可祖堂健康有限公司",
+        text:"可祖堂成立于1998年，是人们..."
+      }
+    ]
+  },
+  onLoad() {},
+});

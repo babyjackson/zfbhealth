@@ -1,0 +1,95 @@
+@import '/pages/common/common.acss';
+@import '/util/footer/index.acss';
+.h140{
+    height: 140rpx;
+}
+page{
+    background: #eeeeee;
+}
+.tabnav{
+    width: 750rpx;
+    height: 60rpx;
+    background: #ffffff;
+    display: flex;
+    border-bottom:1rpx solid #e5e5e5;
+}
+.tabnav view{
+    width: 33.3%;
+    height: 57rpx;
+    text-align: center;
+    line-height: 57rpx;
+    font-size: 20rpx;
+    border-bottom: 3rpx solid #fff;
+}
+.tabnav view.active{
+    border-bottom: 3rpx solid #46be05;
+    color: #46be05;
+}
+.cont-item{
+    display: none;
+}
+.cont-item.on{
+    display: block;
+}
+/**资讯*/
+.inform .item{
+    width: 750rpx;
+    height: 265rpx;
+    background: #ffffff;
+    margin-bottom: 15rpx;
+}
+.inform .item .dl{
+    width: 375rpx;
+    height: 265rpx;
+    margin-left: 20rpx;
+}
+.h15{
+    height: 15rpx;
+}
+.inform .item .dl .tit{
+    font-size: 28rpx;
+    color: #373737;
+    display: block;
+    line-height: 55rpx;
+    height: 110rpx;
+    overflow: hidden;
+}
+.inform .item .dl .kj{
+    width: 375rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+    font-size: 21rpx;
+    color: #a9a9a9;
+}
+.inform .item .dl .kj .ys{
+    width: 105rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.inform .item .dl .kj .zan{
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.inform .item .dl .kj .zan image{
+    width: 35rpx;
+    height: 40rpx;
+    display: block;
+}
+.inform .item .dl .kj .date{
+    margin-left: 20rpx;
+    line-height: 40rpx;
+}
+.inform .item .figure{
+    width: 315rpx;
+    height: 225rpx;
+    margin-right: 15rpx;
+}
+.h65{
+    height: 65rpx;
+}
+.inform .item .figure image{
+    width: 315rpx;
+    height: 225rpx;
+    display: block;
+}

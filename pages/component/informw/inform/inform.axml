@@ -1,0 +1,33 @@
+<view class="container">
+  <!--tab-->
+  <view class="tabnav">
+    <view class="s {{tabArr.cur==0 ?'active':''}}" data-index="0" onTap="onTagChange">养生快讯</view>
+    <view class="s {{tabArr.cur==1 ?'active':''}}" data-index="1" onTap="onTagChange">养生市场</view>
+    <view class="s {{tabArr.cur==2 ?'active':''}}" data-index="2" onTap="onTagChange">养生国际</view>
+  </view>
+  <view class="cont-item {{tabArr.cur==0 ?'on':''}}">
+    <view class="inform">
+      <navigator class="item clearfix" a:for="{{inform}}" url="{{item.url}}">
+        <view class="h15"></view>
+        <view class="dl fl">
+          <view class="tit">{{item.tit}}</view>
+          <view class="h65"></view>
+          <view class="kj clearfix">
+            <view class="ys fl">{{item.ys}}</view>
+            <view class="zan fl clearfix">
+              <image src="/images/lovexin.png" class="fl"/>
+              <text>{{item.zan}}</text>
+            </view>
+            <view class="date fl">{{item.date}}</view>
+          </view>
+        </view>
+        <view class="figure fr">
+          <image src="{{item.imgsrc}}"/>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="cont-item {{tabArr.cur==1 ?'on':''}}">2</view>
+  <view class="cont-item {{tabArr.cur==2 ?'on':''}}">3</view>
+</view>
+

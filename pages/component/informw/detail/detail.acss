@@ -1,0 +1,199 @@
+@import '/pages/common/common.acss';
+page{
+    background:#eeeeee;
+}
+.h30{
+    height: 30rpx;
+}
+.h15{
+    height:15rpx;
+}
+.article{
+    background: #fff;
+}
+.article .bigtit{
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #000000;
+    font-size: 35rpx;
+    text-indent: 15rpx;
+    overflow: hidden;
+}
+.article .tkj{
+    height: 45rpx;
+    overflow: hidden;
+    line-height: 45rpx;
+    color: #a1a1a1;
+    font-size: 23rpx;
+}
+
+.article .tkj .label{
+    margin-left: 20rpx;
+}
+.article .tkj .date{
+    margin-left: 15rpx;
+}
+.article .p_txt{
+    font-size: 23rpx;
+    color: #2d2d2d;
+    line-height: 35rpx;
+    padding: 0 20rpx;
+}
+.article .img{
+    width: 710rpx;
+    height: 385rpx;
+    margin: 0 auto;
+}
+.article .img image{
+    width: 710rpx;
+    height: 385rpx;
+    display: block;
+}
+.article .tit{
+    font-size: 23rpx;
+    color: #2d2d2d;
+    line-height: 35rpx;
+    padding: 0 20rpx;
+}
+.maylook{
+    background:#fff;
+}
+.maylook .bigtit{
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 35rpx;
+    color: #2c2c2c;
+    text-align: center;
+    border-bottom: 1rpx solid #e7e7e7;
+}
+/**资讯*/
+.inform .item{
+    width: 750rpx;
+    height: 265rpx;
+    background: #ffffff;
+    border-bottom:1rpx solid #eeeeee;
+}
+.inform .item .dl{
+    width: 375rpx;
+    height: 265rpx;
+    margin-left: 20rpx;
+}
+.h15{
+    height: 15rpx;
+}
+.inform .item .dl .tit{
+    font-size: 28rpx;
+    color: #373737;
+    display: block;
+    line-height: 55rpx;
+    height: 110rpx;
+    overflow: hidden;
+}
+.inform .item .dl .kj{
+    width: 375rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+    font-size: 21rpx;
+    color: #a9a9a9;
+}
+.inform .item .dl .kj .ys{
+    width: 105rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.inform .item .dl .kj .zan{
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.inform .item .dl .kj .zan image{
+    width: 35rpx;
+    height: 40rpx;
+    display: block;
+}
+.inform .item .dl .kj .date{
+    margin-left: 20rpx;
+    line-height: 40rpx;
+}
+.inform .item .figure{
+    width: 315rpx;
+    height: 225rpx;
+    margin-right: 15rpx;
+}
+.h65{
+    height: 65rpx;
+}
+.inform .item .figure image{
+    width: 315rpx;
+    height: 225rpx;
+    display: block;
+}
+.h100{
+    height: 100rpx;
+}
+.f_bottom{
+    height: 100rpx;
+    width: 750rpx;
+    position: fixed;
+    bottom: 0;
+    border-top: 2rpx solid #bfbfbf;
+    background: #ffffff;
+}
+.f_bottom .bottom{
+    width: 750rpx;
+    height: 100rpx;
+}
+.f_bottom .bottom .same{
+    width: 150rpx;
+    height: 100rpx;
+}
+.xian2{
+    width: 2rpx;
+    height: 100rpx;
+    background: #b9b9b9;
+}
+.f_bottom .bottom .same .num{
+    line-height: 40rpx;
+    height: 40rpx;
+    text-align: center;
+    font-size: 20rpx;
+    overflow: hidden;
+}
+.f_bottom .bottom .same .wp{
+    width: 100rpx;
+    height: 35rpx;
+    margin: 10rpx auto;
+    overflow: hidden;
+}
+.f_bottom .bottom .same .wp image{
+    width: 35rpx;
+    height: 35rpx;
+    display: block;
+}
+.f_bottom .bottom .same .wp text{
+    font-size: 20rpx;
+    line-height: 35rpx;
+    color: #191e19;
+}
+.f_bottom .bottom .share{
+    width: 440rpx;
+    height: 100rpx;
+    background: #46be05;
+}
+.f_bottom .bottom .share .wp{
+    width: 180rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    margin: 30rpx auto;
+}
+.f_bottom .bottom .share .wp image{
+    width: 35rpx;
+    height: 35rpx;
+    display: block;
+}
+.f_bottom .bottom .share .wp text{
+    line-height: 35rpx;
+    margin-left: 15rpx;
+    font-size: 23rpx;
+    color: #ffffff;
+}
